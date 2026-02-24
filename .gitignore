@@ -1,7 +1,11 @@
 node_modules/
 dist/
 data/*.db
+data/*.db-wal
+data/*.db-shm
 data/*.sqlite
 .env
 .env.local
 reports/*.pdf
+reports/*.md
+reports/*.json
