@@ -1,0 +1,19 @@
+{
+  "name": "donut-investor-pipe",
+  "version": "0.1.0",
+  "description": "Investor pipeline CRM & outreach automation for Donut",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch src/web/server.ts",
+    "seed": "bun run src/database/seed.ts",
+    "match": "bun run src/matching/engine.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
