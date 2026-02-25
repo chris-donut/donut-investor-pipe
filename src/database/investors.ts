@@ -155,3 +155,38 @@ export function totalAum(): number {
   const r = getDb().query("SELECT SUM(aum) as total FROM investors").get() as any;
   return r?.total || 0;
 }
+
+export function computeScore(i: Investor): number {
+  let score = 0;
+  const thesisStr = i.thesis.join(" ").toLowerCase();
+  ["ai", "crypto", "defi", "fintech", "trading"].forEach(kw => {
+    if (thesisStr.includes(kw)) score += 6;
+  });
+  if (i.type === "crypto_fund") score += 15;
+  else if (i.type === "vc" && thesisStr.includes("crypto")) score += 8;
+  const stageStr = i.stage.join(" ").toLowerCase();
+  if (stageStr.includes("seed") || stageStr.includes("series-a") || stageStr.includes("series a")) score += 15;
+  if (i.check_size.min <= 10000000 && i.check_size.max >= 500000) score += 10;
+  let dealScore = 0;
+  i.recent_deals.forEach(d => {
+    const dStr = (d.company + " " + d.round + " " + (d.relevance || "")).toLowerCase();
+    if (["crypto","defi","blockchain","trading","web3","token","chain"].some(kw => dStr.includes(kw))) dealScore += 5;
+  });
+  score += Math.min(dealScore, 15);
+  if (i.donut_relevance) {
+    const rel = i.donut_relevance.toUpperCase();
+    if (rel.includes("PRIORITY") || rel.includes("TOP")) score += 15;
+    else if (i.donut_relevance.length > 100) score += 10;
+    else if (i.donut_relevance.length > 0) score += 5;
+  }
+  return Math.min(score, 100);
+}
+
+export function updateAllScores(): void {
+  const all = listInvestors();
+  for (const inv of all) {
+    const s = computeScore(inv);
+    updateInvestor(inv.id, { score: s });
+  }
+  console.log("Updated scores for " + all.length + " investors");
+}
