@@ -2,15 +2,53 @@
   {
     "name": "a16z crypto",
     "type": "vc",
-    "thesis": ["Crypto", "Web3", "DeFi", "Infrastructure", "AI"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 1000000, "max": 50000000 },
-    "portfolio": ["Uniswap", "Solana", "Phantom", "Goldfinch", "LayerZero"],
-    "partners": [
-      { "name": "Chris Dixon", "title": "Managing Partner", "twitter": "cdixon", "focus": ["Crypto", "Web3"] },
-      { "name": "Arianna Simpson", "title": "General Partner", "twitter": "AriannaSimpson", "focus": ["DeFi", "Infrastructure"] }
+    "thesis": [
+      "Crypto",
+      "Web3",
+      "DeFi",
+      "Infrastructure",
+      "AI"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 50000000
+    },
+    "portfolio": [
+      "Uniswap",
+      "Solana",
+      "Phantom",
+      "Goldfinch",
+      "LayerZero"
+    ],
+    "partners": [
+      {
+        "name": "Chris Dixon",
+        "title": "Managing Partner",
+        "twitter": "cdixon",
+        "focus": [
+          "Crypto",
+          "Web3"
+        ]
+      },
+      {
+        "name": "Arianna Simpson",
+        "title": "General Partner",
+        "twitter": "AriannaSimpson",
+        "focus": [
+          "DeFi",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Tier 1 crypto fund. Large checks, long process.",
     "source": "seed-list"
@@ -18,15 +56,53 @@
   {
     "name": "Paradigm",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "MEV", "Trading", "Infrastructure"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 1000000, "max": 100000000 },
-    "portfolio": ["Uniswap", "Optimism", "Blur", "Flashbots", "Cosmos"],
-    "partners": [
-      { "name": "Matt Huang", "title": "Co-Founder", "twitter": "matthuang", "focus": ["Crypto", "Trading"] },
-      { "name": "Fred Ehrsam", "title": "Co-Founder", "twitter": "FEhrsam", "focus": ["DeFi", "Infrastructure"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "MEV",
+      "Trading",
+      "Infrastructure"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 100000000
+    },
+    "portfolio": [
+      "Uniswap",
+      "Optimism",
+      "Blur",
+      "Flashbots",
+      "Cosmos"
+    ],
+    "partners": [
+      {
+        "name": "Matt Huang",
+        "title": "Co-Founder",
+        "twitter": "matthuang",
+        "focus": [
+          "Crypto",
+          "Trading"
+        ]
+      },
+      {
+        "name": "Fred Ehrsam",
+        "title": "Co-Founder",
+        "twitter": "FEhrsam",
+        "focus": [
+          "DeFi",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Research-heavy fund, strong trading infra thesis.",
     "source": "seed-list"
@@ -34,14 +110,41 @@
   {
     "name": "Polychain Capital",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "L1/L2", "Infrastructure"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 20000000 },
-    "portfolio": ["Solana", "Celo", "Dfinity", "Acala"],
-    "partners": [
-      { "name": "Olaf Carlson-Wee", "title": "Founder & CEO", "twitter": "polaborat", "focus": ["Crypto", "Infrastructure"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "L1/L2",
+      "Infrastructure"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 20000000
+    },
+    "portfolio": [
+      "Solana",
+      "Celo",
+      "Dfinity",
+      "Acala"
+    ],
+    "partners": [
+      {
+        "name": "Olaf Carlson-Wee",
+        "title": "Founder & CEO",
+        "twitter": "polaborat",
+        "focus": [
+          "Crypto",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Early Solana backer. Good thesis alignment.",
     "source": "seed-list"
@@ -49,15 +152,53 @@
   {
     "name": "Multicoin Capital",
     "type": "vc",
-    "thesis": ["Crypto", "Solana", "DeFi", "Infrastructure", "DePIN"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 25000000 },
-    "portfolio": ["Solana", "Helium", "Render", "Pyth", "Hivemapper"],
-    "partners": [
-      { "name": "Kyle Samani", "title": "Managing Partner", "twitter": "KyleSamani", "focus": ["Solana", "DeFi", "DePIN"] },
-      { "name": "Tushar Jain", "title": "Managing Partner", "twitter": "TusharJain_", "focus": ["Crypto", "Infrastructure"] }
+    "thesis": [
+      "Crypto",
+      "Solana",
+      "DeFi",
+      "Infrastructure",
+      "DePIN"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 25000000
+    },
+    "portfolio": [
+      "Solana",
+      "Helium",
+      "Render",
+      "Pyth",
+      "Hivemapper"
+    ],
+    "partners": [
+      {
+        "name": "Kyle Samani",
+        "title": "Managing Partner",
+        "twitter": "KyleSamani",
+        "focus": [
+          "Solana",
+          "DeFi",
+          "DePIN"
+        ]
+      },
+      {
+        "name": "Tushar Jain",
+        "title": "Managing Partner",
+        "twitter": "TusharJain_",
+        "focus": [
+          "Crypto",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Strong Solana ecosystem conviction. Top target.",
     "source": "seed-list"
@@ -65,15 +206,48 @@
   {
     "name": "Framework Ventures",
     "type": "vc",
-    "thesis": ["DeFi", "Gaming", "AI", "Infrastructure"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 15000000 },
-    "portfolio": ["Chainlink", "Aave", "Synthetix", "Illuvium"],
-    "partners": [
-      { "name": "Vance Spencer", "title": "Co-Founder", "twitter": "pythianism", "focus": ["DeFi", "AI"] },
-      { "name": "Michael Anderson", "title": "Co-Founder", "focus": ["DeFi", "Infrastructure"] }
+    "thesis": [
+      "DeFi",
+      "Gaming",
+      "AI",
+      "Infrastructure"
     ],
-    "geo": ["US"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 15000000
+    },
+    "portfolio": [
+      "Chainlink",
+      "Aave",
+      "Synthetix",
+      "Illuvium"
+    ],
+    "partners": [
+      {
+        "name": "Vance Spencer",
+        "title": "Co-Founder",
+        "twitter": "pythianism",
+        "focus": [
+          "DeFi",
+          "AI"
+        ]
+      },
+      {
+        "name": "Michael Anderson",
+        "title": "Co-Founder",
+        "focus": [
+          "DeFi",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Active in AI x Crypto intersection.",
     "source": "seed-list"
@@ -81,15 +255,52 @@
   {
     "name": "Dragonfly",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "Cross-chain"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 500000, "max": 30000000 },
-    "portfolio": ["Aptos", "Monad", "Manta", "Flashbots"],
-    "partners": [
-      { "name": "Haseeb Qureshi", "title": "Managing Partner", "twitter": "hosseeb", "focus": ["DeFi", "Infrastructure"] },
-      { "name": "Tom Schmidt", "title": "General Partner", "twitter": "tomhschmidt", "focus": ["DeFi", "Trading"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "Cross-chain"
     ],
-    "geo": ["US", "Asia", "Global"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 30000000
+    },
+    "portfolio": [
+      "Aptos",
+      "Monad",
+      "Manta",
+      "Flashbots"
+    ],
+    "partners": [
+      {
+        "name": "Haseeb Qureshi",
+        "title": "Managing Partner",
+        "twitter": "hosseeb",
+        "focus": [
+          "DeFi",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "Tom Schmidt",
+        "title": "General Partner",
+        "twitter": "tomhschmidt",
+        "focus": [
+          "DeFi",
+          "Trading"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Asia",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Strong Asia presence. Good fit for HK-based team.",
     "source": "seed-list"
@@ -97,15 +308,50 @@
   {
     "name": "Electric Capital",
     "type": "vc",
-    "thesis": ["Crypto", "Developer Tools", "Infrastructure", "L1/L2"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 15000000 },
-    "portfolio": ["Kraken", "Frax", "dYdX", "Mysten Labs"],
-    "partners": [
-      { "name": "Avichal Garg", "title": "Managing Partner", "twitter": "avaborat", "focus": ["Developer Tools", "Infrastructure"] },
-      { "name": "Maria Shen", "title": "Partner", "twitter": "MariaShen", "focus": ["DeFi", "Developer Tools"] }
+    "thesis": [
+      "Crypto",
+      "Developer Tools",
+      "Infrastructure",
+      "L1/L2"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 15000000
+    },
+    "portfolio": [
+      "Kraken",
+      "Frax",
+      "dYdX",
+      "Mysten Labs"
+    ],
+    "partners": [
+      {
+        "name": "Avichal Garg",
+        "title": "Managing Partner",
+        "twitter": "avaborat",
+        "focus": [
+          "Developer Tools",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "Maria Shen",
+        "title": "Partner",
+        "twitter": "MariaShen",
+        "focus": [
+          "DeFi",
+          "Developer Tools"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Developer ecosystem reports. Infrastructure focused.",
     "source": "seed-list"
@@ -113,15 +359,51 @@
   {
     "name": "Hack VC",
     "type": "vc",
-    "thesis": ["Crypto", "AI", "Infrastructure", "DeFi"],
-    "stage": ["pre-seed", "seed", "series-a"],
-    "check_size": { "min": 250000, "max": 10000000 },
-    "portfolio": ["EigenLayer", "Grass", "io.net", "Sahara AI"],
-    "partners": [
-      { "name": "Alexander Pack", "title": "Managing Partner", "twitter": "alpackap", "focus": ["AI", "Infrastructure"] },
-      { "name": "Ed Roman", "title": "Managing Partner", "twitter": "edroman", "focus": ["AI", "Crypto"] }
+    "thesis": [
+      "Crypto",
+      "AI",
+      "Infrastructure",
+      "DeFi"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "pre-seed",
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 10000000
+    },
+    "portfolio": [
+      "EigenLayer",
+      "Grass",
+      "io.net",
+      "Sahara AI"
+    ],
+    "partners": [
+      {
+        "name": "Alexander Pack",
+        "title": "Managing Partner",
+        "twitter": "alpackap",
+        "focus": [
+          "AI",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "Ed Roman",
+        "title": "Managing Partner",
+        "twitter": "edroman",
+        "focus": [
+          "AI",
+          "Crypto"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Active in AI x Crypto. Does pre-seed. Strong fit.",
     "source": "seed-list"
@@ -129,15 +411,51 @@
   {
     "name": "Pantera Capital",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "Trading"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 500000, "max": 25000000 },
-    "portfolio": ["Circle", "Alchemy", "Injective", "1inch"],
-    "partners": [
-      { "name": "Dan Morehead", "title": "Founder & CEO", "twitter": "dan_pantera", "focus": ["Crypto", "Macro"] },
-      { "name": "Paul Veradittakit", "title": "Managing Partner", "twitter": "veaborat", "focus": ["DeFi", "Infrastructure"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "Trading"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 25000000
+    },
+    "portfolio": [
+      "Circle",
+      "Alchemy",
+      "Injective",
+      "1inch"
+    ],
+    "partners": [
+      {
+        "name": "Dan Morehead",
+        "title": "Founder & CEO",
+        "twitter": "dan_pantera",
+        "focus": [
+          "Crypto",
+          "Macro"
+        ]
+      },
+      {
+        "name": "Paul Veradittakit",
+        "title": "Managing Partner",
+        "twitter": "veaborat",
+        "focus": [
+          "DeFi",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "One of the oldest crypto funds. Strong brand.",
     "source": "seed-list"
@@ -145,14 +463,42 @@
   {
     "name": "Galaxy Digital",
     "type": "vc",
-    "thesis": ["Crypto", "Trading", "Infrastructure", "Mining"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 1000000, "max": 50000000 },
-    "portfolio": ["Fireblocks", "Figment", "Celestia", "Bitso"],
-    "partners": [
-      { "name": "Mike Novogratz", "title": "Founder & CEO", "twitter": "novaborat", "focus": ["Crypto", "Macro"] }
+    "thesis": [
+      "Crypto",
+      "Trading",
+      "Infrastructure",
+      "Mining"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 50000000
+    },
+    "portfolio": [
+      "Fireblocks",
+      "Figment",
+      "Celestia",
+      "Bitso"
+    ],
+    "partners": [
+      {
+        "name": "Mike Novogratz",
+        "title": "Founder & CEO",
+        "twitter": "novaborat",
+        "focus": [
+          "Crypto",
+          "Macro"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Trading background. May understand trading infra thesis well.",
     "source": "seed-list"
@@ -160,15 +506,52 @@
   {
     "name": "Delphi Ventures",
     "type": "vc",
-    "thesis": ["DeFi", "AI", "Crypto", "Solana", "Infrastructure"],
-    "stage": ["pre-seed", "seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["Axelar", "Lido", "Arbitrum", "GMX"],
-    "partners": [
-      { "name": "Tom Shaughnessy", "title": "Managing Partner", "twitter": "Shaughnessy119", "focus": ["DeFi", "AI"] },
-      { "name": "Piers Kicks", "title": "Partner", "twitter": "piaborat", "focus": ["DeFi", "Infrastructure"] }
+    "thesis": [
+      "DeFi",
+      "AI",
+      "Crypto",
+      "Solana",
+      "Infrastructure"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "pre-seed",
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "Axelar",
+      "Lido",
+      "Arbitrum",
+      "GMX"
+    ],
+    "partners": [
+      {
+        "name": "Tom Shaughnessy",
+        "title": "Managing Partner",
+        "twitter": "Shaughnessy119",
+        "focus": [
+          "DeFi",
+          "AI"
+        ]
+      },
+      {
+        "name": "Piers Kicks",
+        "title": "Partner",
+        "twitter": "piaborat",
+        "focus": [
+          "DeFi",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Research-first fund. Delphi Digital arm gives reach. Does pre-seed.",
     "source": "seed-list"
@@ -176,15 +559,49 @@
   {
     "name": "Placeholder",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "Governance"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 10000000 },
-    "portfolio": ["Uniswap", "Aave", "Balancer", "Decred"],
-    "partners": [
-      { "name": "Chris Burniske", "title": "Partner", "twitter": "cburniske", "focus": ["DeFi", "Crypto"] },
-      { "name": "Joel Monegro", "title": "Partner", "twitter": "jmonegro", "focus": ["Infrastructure", "Governance"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "Governance"
     ],
-    "geo": ["US"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 10000000
+    },
+    "portfolio": [
+      "Uniswap",
+      "Aave",
+      "Balancer",
+      "Decred"
+    ],
+    "partners": [
+      {
+        "name": "Chris Burniske",
+        "title": "Partner",
+        "twitter": "cburniske",
+        "focus": [
+          "DeFi",
+          "Crypto"
+        ]
+      },
+      {
+        "name": "Joel Monegro",
+        "title": "Partner",
+        "twitter": "jmonegro",
+        "focus": [
+          "Infrastructure",
+          "Governance"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Thesis-driven fund. Strong DeFi conviction.",
     "source": "seed-list"
@@ -192,15 +609,51 @@
   {
     "name": "Variant Fund",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Consumer", "AI", "Ownership Economy"],
-    "stage": ["pre-seed", "seed", "series-a"],
-    "check_size": { "min": 250000, "max": 10000000 },
-    "portfolio": ["Uniswap", "Mirror", "Ceramic", "Farcaster"],
-    "partners": [
-      { "name": "Jesse Walden", "title": "Founder", "twitter": "jessewldn", "focus": ["Ownership Economy", "Consumer"] },
-      { "name": "Li Jin", "title": "General Partner", "twitter": "ljin18", "focus": ["Consumer", "Creator Economy"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Consumer",
+      "AI",
+      "Ownership Economy"
     ],
-    "geo": ["US"],
+    "stage": [
+      "pre-seed",
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 10000000
+    },
+    "portfolio": [
+      "Uniswap",
+      "Mirror",
+      "Ceramic",
+      "Farcaster"
+    ],
+    "partners": [
+      {
+        "name": "Jesse Walden",
+        "title": "Founder",
+        "twitter": "jessewldn",
+        "focus": [
+          "Ownership Economy",
+          "Consumer"
+        ]
+      },
+      {
+        "name": "Li Jin",
+        "title": "General Partner",
+        "twitter": "ljin18",
+        "focus": [
+          "Consumer",
+          "Creator Economy"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Does pre-seed. AI interest growing.",
     "source": "seed-list"
@@ -208,15 +661,49 @@
   {
     "name": "Robot Ventures",
     "type": "vc",
-    "thesis": ["DeFi", "AI", "Trading", "Infrastructure"],
-    "stage": ["pre-seed", "seed"],
-    "check_size": { "min": 100000, "max": 2000000 },
-    "portfolio": ["Phantom", "Drift", "Tensor", "Jito"],
-    "partners": [
-      { "name": "Tarun Chitra", "title": "Founder", "twitter": "tarunchitra", "focus": ["DeFi", "Trading", "AI"] },
-      { "name": "Robert Leshner", "title": "Co-Founder", "twitter": "rleshner", "focus": ["DeFi"] }
+    "thesis": [
+      "DeFi",
+      "AI",
+      "Trading",
+      "Infrastructure"
     ],
-    "geo": ["US"],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 100000,
+      "max": 2000000
+    },
+    "portfolio": [
+      "Phantom",
+      "Drift",
+      "Tensor",
+      "Jito"
+    ],
+    "partners": [
+      {
+        "name": "Tarun Chitra",
+        "title": "Founder",
+        "twitter": "tarunchitra",
+        "focus": [
+          "DeFi",
+          "Trading",
+          "AI"
+        ]
+      },
+      {
+        "name": "Robert Leshner",
+        "title": "Co-Founder",
+        "twitter": "rleshner",
+        "focus": [
+          "DeFi"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Tarun has deep quantitative trading + AI background. Very strong fit for Donut thesis.",
     "source": "seed-list"
@@ -224,15 +711,49 @@
   {
     "name": "1kx",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "Token Economics"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 10000000 },
-    "portfolio": ["Lido", "Dune Analytics", "Gnosis Safe", "Biconomy"],
-    "partners": [
-      { "name": "Lasse Clausen", "title": "Founding Partner", "twitter": "laborat1kx", "focus": ["DeFi", "Infrastructure"] },
-      { "name": "Christopher Heymann", "title": "Partner", "focus": ["Token Economics", "DeFi"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "Token Economics"
     ],
-    "geo": ["Europe", "Global"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 10000000
+    },
+    "portfolio": [
+      "Lido",
+      "Dune Analytics",
+      "Gnosis Safe",
+      "Biconomy"
+    ],
+    "partners": [
+      {
+        "name": "Lasse Clausen",
+        "title": "Founding Partner",
+        "twitter": "laborat1kx",
+        "focus": [
+          "DeFi",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "Christopher Heymann",
+        "title": "Partner",
+        "focus": [
+          "Token Economics",
+          "DeFi"
+        ]
+      }
+    ],
+    "geo": [
+      "Europe",
+      "Global"
+    ],
     "status": "researching",
     "notes": "European-based but global deals. Token-first approach.",
     "source": "seed-list"
@@ -240,14 +761,40 @@
   {
     "name": "Mechanism Capital",
     "type": "crypto_fund",
-    "thesis": ["DeFi", "Trading", "Yield", "Infrastructure"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["dYdX", "Nansen", "Yield Guild Games"],
-    "partners": [
-      { "name": "Andrew Kang", "title": "Founder", "twitter": "Rewkang", "focus": ["DeFi", "Trading"] }
+    "thesis": [
+      "DeFi",
+      "Trading",
+      "Yield",
+      "Infrastructure"
     ],
-    "geo": ["US", "Asia"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "dYdX",
+      "Nansen",
+      "Yield Guild Games"
+    ],
+    "partners": [
+      {
+        "name": "Andrew Kang",
+        "title": "Founder",
+        "twitter": "Rewkang",
+        "focus": [
+          "DeFi",
+          "Trading"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Asia"
+    ],
     "status": "researching",
     "notes": "Trading-focused thesis. Strong DeFi trading alignment.",
     "source": "seed-list"
@@ -255,14 +802,36 @@
   {
     "name": "Amber Group",
     "type": "crypto_fund",
-    "thesis": ["Trading", "Infrastructure", "DeFi", "CeFi"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 10000000 },
+    "thesis": [
+      "Trading",
+      "Infrastructure",
+      "DeFi",
+      "CeFi"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 10000000
+    },
     "portfolio": [],
     "partners": [
-      { "name": "Michael Wu", "title": "CEO", "focus": ["Trading", "Infrastructure"] }
+      {
+        "name": "Michael Wu",
+        "title": "CEO",
+        "focus": [
+          "Trading",
+          "Infrastructure"
+        ]
+      }
     ],
-    "geo": ["Hong Kong", "Singapore", "Global"],
+    "geo": [
+      "Hong Kong",
+      "Singapore",
+      "Global"
+    ],
     "status": "researching",
     "notes": "HK-based trading firm. Geographic alignment + trading thesis match.",
     "source": "seed-list"
@@ -270,14 +839,40 @@
   {
     "name": "DeFiance Capital",
     "type": "crypto_fund",
-    "thesis": ["DeFi", "Trading", "Solana", "Infrastructure"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["Zeta Markets", "Synthetix", "Aave"],
-    "partners": [
-      { "name": "Arthur Cheong", "title": "Founder", "twitter": "DeFiArt", "focus": ["DeFi", "Trading"] }
+    "thesis": [
+      "DeFi",
+      "Trading",
+      "Solana",
+      "Infrastructure"
     ],
-    "geo": ["Singapore", "Asia"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "Zeta Markets",
+      "Synthetix",
+      "Aave"
+    ],
+    "partners": [
+      {
+        "name": "Arthur Cheong",
+        "title": "Founder",
+        "twitter": "DeFiArt",
+        "focus": [
+          "DeFi",
+          "Trading"
+        ]
+      }
+    ],
+    "geo": [
+      "Singapore",
+      "Asia"
+    ],
     "status": "researching",
     "notes": "Asia-based DeFi specialist. Good regional fit.",
     "source": "seed-list"
@@ -285,15 +880,49 @@
   {
     "name": "Spartan Group",
     "type": "crypto_fund",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "Gaming"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["Synthetix", "The Sandbox", "Avalanche"],
-    "partners": [
-      { "name": "Kelvin Koh", "title": "Managing Partner", "twitter": "SpartanBlack_1", "focus": ["DeFi", "Infrastructure"] },
-      { "name": "Melody He", "title": "Partner", "focus": ["Infrastructure", "Gaming"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "Gaming"
     ],
-    "geo": ["Singapore", "Asia", "Global"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "Synthetix",
+      "The Sandbox",
+      "Avalanche"
+    ],
+    "partners": [
+      {
+        "name": "Kelvin Koh",
+        "title": "Managing Partner",
+        "twitter": "SpartanBlack_1",
+        "focus": [
+          "DeFi",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "Melody He",
+        "title": "Partner",
+        "focus": [
+          "Infrastructure",
+          "Gaming"
+        ]
+      }
+    ],
+    "geo": [
+      "Singapore",
+      "Asia",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Strong Asia network. Active early-stage investor.",
     "source": "seed-list"
@@ -301,15 +930,45 @@
   {
     "name": "Colosseum",
     "type": "vc",
-    "thesis": ["Solana", "Infrastructure", "DeFi", "Consumer"],
-    "stage": ["pre-seed", "seed"],
-    "check_size": { "min": 250000, "max": 3000000 },
+    "thesis": [
+      "Solana",
+      "Infrastructure",
+      "DeFi",
+      "Consumer"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 3000000
+    },
     "portfolio": [],
     "partners": [
-      { "name": "Matty Taylor", "title": "General Partner", "twitter": "mattytay", "focus": ["Solana", "Infrastructure"] },
-      { "name": "Clay Robbins", "title": "General Partner", "twitter": "clayrobbins_", "focus": ["Solana", "Consumer"] }
+      {
+        "name": "Matty Taylor",
+        "title": "General Partner",
+        "twitter": "mattytay",
+        "focus": [
+          "Solana",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "Clay Robbins",
+        "title": "General Partner",
+        "twitter": "clayrobbins_",
+        "focus": [
+          "Solana",
+          "Consumer"
+        ]
+      }
     ],
-    "geo": ["US", "Global"],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Solana-focused accelerator/fund. Runs Solana hackathons. Top Solana ecosystem target.",
     "source": "seed-list"
@@ -317,12 +976,30 @@
   {
     "name": "Solana Ventures",
     "type": "vc",
-    "thesis": ["Solana", "DeFi", "Infrastructure", "NFT"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 10000000 },
-    "portfolio": ["Marinade Finance", "Orca", "Metaplex"],
+    "thesis": [
+      "Solana",
+      "DeFi",
+      "Infrastructure",
+      "NFT"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 10000000
+    },
+    "portfolio": [
+      "Marinade Finance",
+      "Orca",
+      "Metaplex"
+    ],
     "partners": [],
-    "geo": ["US", "Global"],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Legacy Solana Labs venture arm. Status unclear post-restructuring.",
     "source": "seed-list"
@@ -330,12 +1007,29 @@
   {
     "name": "Big Brain Holdings",
     "type": "vc",
-    "thesis": ["Solana", "DeFi", "Infrastructure", "AI"],
-    "stage": ["pre-seed", "seed"],
-    "check_size": { "min": 100000, "max": 2000000 },
-    "portfolio": ["Jupiter", "Tensor", "Drift"],
+    "thesis": [
+      "Solana",
+      "DeFi",
+      "Infrastructure",
+      "AI"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 100000,
+      "max": 2000000
+    },
+    "portfolio": [
+      "Jupiter",
+      "Tensor",
+      "Drift"
+    ],
     "partners": [],
-    "geo": ["Global"],
+    "geo": [
+      "Global"
+    ],
     "status": "researching",
     "notes": "Solana-focused. Strong ecosystem connections.",
     "source": "seed-list"
@@ -343,14 +1037,41 @@
   {
     "name": "Sino Global Capital",
     "type": "vc",
-    "thesis": ["Crypto", "Solana", "Infrastructure", "Gaming"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["Solana", "Serum", "Aurory"],
-    "partners": [
-      { "name": "Matthew Graham", "title": "CEO", "twitter": "mattysino", "focus": ["Solana", "Infrastructure"] }
+    "thesis": [
+      "Crypto",
+      "Solana",
+      "Infrastructure",
+      "Gaming"
     ],
-    "geo": ["Hong Kong", "Asia", "Global"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "Solana",
+      "Serum",
+      "Aurory"
+    ],
+    "partners": [
+      {
+        "name": "Matthew Graham",
+        "title": "CEO",
+        "twitter": "mattysino",
+        "focus": [
+          "Solana",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "Hong Kong",
+      "Asia",
+      "Global"
+    ],
     "status": "researching",
     "notes": "HK-based. Early Solana backer. Geographic + ecosystem alignment.",
     "source": "seed-list"
@@ -358,14 +1079,41 @@
   {
     "name": "Lightspeed Venture Partners",
     "type": "vc",
-    "thesis": ["Crypto", "Infrastructure", "Enterprise", "AI"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 1000000, "max": 50000000 },
-    "portfolio": ["Solana", "FTX", "Wintermute"],
-    "partners": [
-      { "name": "Amy Wu", "title": "Partner", "twitter": "amytongwu", "focus": ["Crypto", "Consumer"] }
+    "thesis": [
+      "Crypto",
+      "Infrastructure",
+      "Enterprise",
+      "AI"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 50000000
+    },
+    "portfolio": [
+      "Solana",
+      "FTX",
+      "Wintermute"
+    ],
+    "partners": [
+      {
+        "name": "Amy Wu",
+        "title": "Partner",
+        "twitter": "amytongwu",
+        "focus": [
+          "Crypto",
+          "Consumer"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Early Solana backer. Crypto team led by Amy Wu.",
     "source": "seed-list"
@@ -373,12 +1121,30 @@
   {
     "name": "Jump Crypto",
     "type": "crypto_fund",
-    "thesis": ["Trading", "Infrastructure", "DeFi", "Solana"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 1000000, "max": 20000000 },
-    "portfolio": ["Wormhole", "Pyth", "Serum"],
+    "thesis": [
+      "Trading",
+      "Infrastructure",
+      "DeFi",
+      "Solana"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 20000000
+    },
+    "portfolio": [
+      "Wormhole",
+      "Pyth",
+      "Serum"
+    ],
     "partners": [],
-    "geo": ["US", "Global"],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Trading firm. Built Firedancer (Solana validator). Deep trading infra expertise.",
     "source": "seed-list"
@@ -386,14 +1152,36 @@
   {
     "name": "Wintermute Ventures",
     "type": "crypto_fund",
-    "thesis": ["Trading", "DeFi", "Infrastructure", "Market Making"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
+    "thesis": [
+      "Trading",
+      "DeFi",
+      "Infrastructure",
+      "Market Making"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
     "portfolio": [],
     "partners": [
-      { "name": "Evgeny Gaevoy", "title": "CEO", "twitter": "EvgenyGaevoy", "focus": ["Trading", "DeFi"] }
+      {
+        "name": "Evgeny Gaevoy",
+        "title": "CEO",
+        "twitter": "EvgenyGaevoy",
+        "focus": [
+          "Trading",
+          "DeFi"
+        ]
+      }
     ],
-    "geo": ["Europe", "Global"],
+    "geo": [
+      "Europe",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Crypto market maker. Strong trading infrastructure thesis alignment.",
     "source": "seed-list"
@@ -401,12 +1189,30 @@
   {
     "name": "Binance Labs",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "AI"],
-    "stage": ["pre-seed", "seed", "series-a"],
-    "check_size": { "min": 250000, "max": 15000000 },
-    "portfolio": ["Axelar", "Aptos", "Polygon"],
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "AI"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 15000000
+    },
+    "portfolio": [
+      "Axelar",
+      "Aptos",
+      "Polygon"
+    ],
     "partners": [],
-    "geo": ["Global"],
+    "geo": [
+      "Global"
+    ],
     "status": "researching",
     "notes": "Binance ecosystem fund. Broad crypto thesis.",
     "source": "seed-list"
@@ -414,12 +1220,31 @@
   {
     "name": "Coinbase Ventures",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "Compliance"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 15000000 },
-    "portfolio": ["Etherscan", "Compound", "Uniswap", "OpenSea"],
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "Compliance"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 15000000
+    },
+    "portfolio": [
+      "Etherscan",
+      "Compound",
+      "Uniswap",
+      "OpenSea"
+    ],
     "partners": [],
-    "geo": ["US", "Global"],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Coinbase strategic arm. Wide coverage.",
     "source": "seed-list"
@@ -427,14 +1252,40 @@
   {
     "name": "HashKey Capital",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "AI"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 10000000 },
-    "portfolio": ["Galxe", "Polkadot", "Cosmos"],
-    "partners": [
-      { "name": "Deng Chao", "title": "CEO", "focus": ["Crypto", "Infrastructure"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "AI"
     ],
-    "geo": ["Hong Kong", "Asia", "Global"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 10000000
+    },
+    "portfolio": [
+      "Galxe",
+      "Polkadot",
+      "Cosmos"
+    ],
+    "partners": [
+      {
+        "name": "Deng Chao",
+        "title": "CEO",
+        "focus": [
+          "Crypto",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "Hong Kong",
+      "Asia",
+      "Global"
+    ],
     "status": "researching",
     "notes": "HK-based. Licensed crypto fund in HK. Strong local alignment.",
     "source": "seed-list"
@@ -442,14 +1293,42 @@
   {
     "name": "IOSG Ventures",
     "type": "vc",
-    "thesis": ["DeFi", "Infrastructure", "ZK", "AI"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["Eigen Layer", "Scroll", "Celestia", "zkSync"],
-    "partners": [
-      { "name": "Jocy Lin", "title": "Founding Partner", "twitter": "jocylin", "focus": ["DeFi", "Infrastructure"] }
+    "thesis": [
+      "DeFi",
+      "Infrastructure",
+      "ZK",
+      "AI"
     ],
-    "geo": ["Asia", "Europe", "Global"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "Eigen Layer",
+      "Scroll",
+      "Celestia",
+      "zkSync"
+    ],
+    "partners": [
+      {
+        "name": "Jocy Lin",
+        "title": "Founding Partner",
+        "twitter": "jocylin",
+        "focus": [
+          "DeFi",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "Asia",
+      "Europe",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Strong Asia + Europe presence. Active in infra.",
     "source": "seed-list"
@@ -457,14 +1336,41 @@
   {
     "name": "Animoca Ventures",
     "type": "vc",
-    "thesis": ["Gaming", "Metaverse", "DeFi", "Infrastructure", "AI"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["The Sandbox", "Axie Infinity"],
-    "partners": [
-      { "name": "Yat Siu", "title": "Chairman", "twitter": "ysiu", "focus": ["Gaming", "Metaverse"] }
+    "thesis": [
+      "Gaming",
+      "Metaverse",
+      "DeFi",
+      "Infrastructure",
+      "AI"
     ],
-    "geo": ["Hong Kong", "Asia", "Global"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "The Sandbox",
+      "Axie Infinity"
+    ],
+    "partners": [
+      {
+        "name": "Yat Siu",
+        "title": "Chairman",
+        "twitter": "ysiu",
+        "focus": [
+          "Gaming",
+          "Metaverse"
+        ]
+      }
+    ],
+    "geo": [
+      "Hong Kong",
+      "Asia",
+      "Global"
+    ],
     "status": "researching",
     "notes": "HK-based. Gaming focus but expanding into AI + DeFi.",
     "source": "seed-list"
@@ -472,12 +1378,26 @@
   {
     "name": "OKX Ventures",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "AI"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 10000000 },
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "AI"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 10000000
+    },
     "portfolio": [],
     "partners": [],
-    "geo": ["Global", "Asia"],
+    "geo": [
+      "Global",
+      "Asia"
+    ],
     "status": "researching",
     "notes": "OKX exchange venture arm. Broad crypto thesis.",
     "source": "seed-list"
@@ -485,14 +1405,38 @@
   {
     "name": "CMS Holdings",
     "type": "crypto_fund",
-    "thesis": ["DeFi", "Trading", "Infrastructure"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["dYdX", "Perpetual Protocol", "SushiSwap"],
-    "partners": [
-      { "name": "Dan Matuszewski", "title": "Co-Founder", "twitter": "CMS_Dan", "focus": ["DeFi", "Trading"] }
+    "thesis": [
+      "DeFi",
+      "Trading",
+      "Infrastructure"
     ],
-    "geo": ["US"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "dYdX",
+      "Perpetual Protocol",
+      "SushiSwap"
+    ],
+    "partners": [
+      {
+        "name": "Dan Matuszewski",
+        "title": "Co-Founder",
+        "twitter": "CMS_Dan",
+        "focus": [
+          "DeFi",
+          "Trading"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Trading-focused fund. Strong DeFi trading background.",
     "source": "seed-list"
@@ -500,14 +1444,39 @@
   {
     "name": "Nascent",
     "type": "crypto_fund",
-    "thesis": ["DeFi", "Infrastructure", "Trading", "MEV"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["Flashbots", "Goldfinch", "Primitive"],
-    "partners": [
-      { "name": "Dan Elitzer", "title": "Co-Founder", "twitter": "delitzer", "focus": ["DeFi", "MEV"] }
+    "thesis": [
+      "DeFi",
+      "Infrastructure",
+      "Trading",
+      "MEV"
     ],
-    "geo": ["US"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "Flashbots",
+      "Goldfinch",
+      "Primitive"
+    ],
+    "partners": [
+      {
+        "name": "Dan Elitzer",
+        "title": "Co-Founder",
+        "twitter": "delitzer",
+        "focus": [
+          "DeFi",
+          "MEV"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "DeFi-native fund. MEV + trading infrastructure focus.",
     "source": "seed-list"
@@ -515,15 +1484,45 @@
   {
     "name": "Alliance DAO",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Consumer", "AI"],
-    "stage": ["pre-seed", "seed"],
-    "check_size": { "min": 50000, "max": 500000 },
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Consumer",
+      "AI"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 50000,
+      "max": 500000
+    },
     "portfolio": [],
     "partners": [
-      { "name": "Qiao Wang", "title": "Co-Founder", "twitter": "QwQiao", "focus": ["DeFi", "Consumer"] },
-      { "name": "Imran Khan", "title": "Co-Founder", "twitter": "lmrankhan", "focus": ["Consumer", "AI"] }
+      {
+        "name": "Qiao Wang",
+        "title": "Co-Founder",
+        "twitter": "QwQiao",
+        "focus": [
+          "DeFi",
+          "Consumer"
+        ]
+      },
+      {
+        "name": "Imran Khan",
+        "title": "Co-Founder",
+        "twitter": "lmrankhan",
+        "focus": [
+          "Consumer",
+          "AI"
+        ]
+      }
     ],
-    "geo": ["US", "Global"],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Crypto accelerator. Small checks but strong network + community.",
     "source": "seed-list"
@@ -531,14 +1530,42 @@
   {
     "name": "Blockchain Capital",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "Compliance"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 1000000, "max": 20000000 },
-    "portfolio": ["Coinbase", "Kraken", "Aave", "Opensea"],
-    "partners": [
-      { "name": "Spencer Bogart", "title": "General Partner", "twitter": "CremeDeLaCrypto", "focus": ["Crypto", "Infrastructure"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "Compliance"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 20000000
+    },
+    "portfolio": [
+      "Coinbase",
+      "Kraken",
+      "Aave",
+      "Opensea"
+    ],
+    "partners": [
+      {
+        "name": "Spencer Bogart",
+        "title": "General Partner",
+        "twitter": "CremeDeLaCrypto",
+        "focus": [
+          "Crypto",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "OG crypto fund. Broad portfolio.",
     "source": "seed-list"
@@ -546,14 +1573,40 @@
   {
     "name": "Sequoia Capital",
     "type": "vc",
-    "thesis": ["AI", "Fintech", "Crypto", "Infrastructure"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 1000000, "max": 100000000 },
-    "portfolio": ["FTX", "Fireblocks"],
-    "partners": [
-      { "name": "Shaun Maguire", "title": "Partner", "twitter": "shaunmmaguire", "focus": ["AI", "Crypto"] }
+    "thesis": [
+      "AI",
+      "Fintech",
+      "Crypto",
+      "Infrastructure"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 100000000
+    },
+    "portfolio": [
+      "FTX",
+      "Fireblocks"
+    ],
+    "partners": [
+      {
+        "name": "Shaun Maguire",
+        "title": "Partner",
+        "twitter": "shaunmmaguire",
+        "focus": [
+          "AI",
+          "Crypto"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Tier 1 generalist with crypto practice. Hard to access but high signal.",
     "source": "seed-list"
@@ -561,14 +1614,39 @@
   {
     "name": "Founders Fund",
     "type": "vc",
-    "thesis": ["AI", "Crypto", "Infrastructure", "Deep Tech"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 1000000, "max": 50000000 },
-    "portfolio": ["Solana", "Ethena"],
-    "partners": [
-      { "name": "Joey Krug", "title": "Partner", "twitter": "joeykrug", "focus": ["Crypto", "DeFi"] }
+    "thesis": [
+      "AI",
+      "Crypto",
+      "Infrastructure",
+      "Deep Tech"
     ],
-    "geo": ["US"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 50000000
+    },
+    "portfolio": [
+      "Solana",
+      "Ethena"
+    ],
+    "partners": [
+      {
+        "name": "Joey Krug",
+        "title": "Partner",
+        "twitter": "joeykrug",
+        "focus": [
+          "Crypto",
+          "DeFi"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Peter Thiel's fund. Joey Krug leads crypto. Strong AI + crypto overlap.",
     "source": "seed-list"
@@ -576,14 +1654,38 @@
   {
     "name": "Figment Capital",
     "type": "vc",
-    "thesis": ["Infrastructure", "Staking", "DeFi", "AI"],
-    "stage": ["pre-seed", "seed"],
-    "check_size": { "min": 100000, "max": 2000000 },
-    "portfolio": ["EigenLayer", "Monad"],
-    "partners": [
-      { "name": "Trace", "title": "General Partner", "twitter": "traced_ct", "focus": ["Infrastructure", "DeFi"] }
+    "thesis": [
+      "Infrastructure",
+      "Staking",
+      "DeFi",
+      "AI"
     ],
-    "geo": ["US"],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 100000,
+      "max": 2000000
+    },
+    "portfolio": [
+      "EigenLayer",
+      "Monad"
+    ],
+    "partners": [
+      {
+        "name": "Trace",
+        "title": "General Partner",
+        "twitter": "traced_ct",
+        "focus": [
+          "Infrastructure",
+          "DeFi"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "From Figment staking. Deep infra knowledge. Does pre-seed.",
     "source": "seed-list"
@@ -591,15 +1693,46 @@
   {
     "name": "Archetype",
     "type": "vc",
-    "thesis": ["Crypto", "AI", "Infrastructure", "Consumer"],
-    "stage": ["pre-seed", "seed", "series-a"],
-    "check_size": { "min": 250000, "max": 10000000 },
+    "thesis": [
+      "Crypto",
+      "AI",
+      "Infrastructure",
+      "Consumer"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 10000000
+    },
     "portfolio": [],
     "partners": [
-      { "name": "Danny Sursock", "title": "General Partner", "twitter": "dannysursock", "focus": ["AI", "Crypto"] },
-      { "name": "Ash Egan", "title": "General Partner", "twitter": "AshAEgan", "focus": ["Infrastructure", "AI"] }
+      {
+        "name": "Danny Sursock",
+        "title": "General Partner",
+        "twitter": "dannysursock",
+        "focus": [
+          "AI",
+          "Crypto"
+        ]
+      },
+      {
+        "name": "Ash Egan",
+        "title": "General Partner",
+        "twitter": "AshAEgan",
+        "focus": [
+          "Infrastructure",
+          "AI"
+        ]
+      }
     ],
-    "geo": ["US", "Global"],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "AI x Crypto thesis. Does pre-seed. Strong fit.",
     "source": "seed-list"
@@ -607,14 +1740,38 @@
   {
     "name": "Haun Ventures",
     "type": "vc",
-    "thesis": ["Crypto", "Web3", "Infrastructure", "Compliance"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 1000000, "max": 25000000 },
-    "portfolio": ["Alchemy", "LayerZero"],
-    "partners": [
-      { "name": "Katie Haun", "title": "Founder", "twitter": "katie_haun", "focus": ["Crypto", "Compliance"] }
+    "thesis": [
+      "Crypto",
+      "Web3",
+      "Infrastructure",
+      "Compliance"
     ],
-    "geo": ["US"],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 25000000
+    },
+    "portfolio": [
+      "Alchemy",
+      "LayerZero"
+    ],
+    "partners": [
+      {
+        "name": "Katie Haun",
+        "title": "Founder",
+        "twitter": "katie_haun",
+        "focus": [
+          "Crypto",
+          "Compliance"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Former a16z crypto. $1.5B fund. Focus on regulated crypto.",
     "source": "seed-list"
@@ -622,14 +1779,39 @@
   {
     "name": "Tribe Capital",
     "type": "vc",
-    "thesis": ["Fintech", "Crypto", "AI", "Data"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 1000000, "max": 20000000 },
-    "portfolio": ["FTX", "Solana"],
-    "partners": [
-      { "name": "Arjun Sethi", "title": "Co-Founder", "twitter": "arjunblj", "focus": ["Fintech", "Crypto"] }
+    "thesis": [
+      "Fintech",
+      "Crypto",
+      "AI",
+      "Data"
     ],
-    "geo": ["US"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 20000000
+    },
+    "portfolio": [
+      "FTX",
+      "Solana"
+    ],
+    "partners": [
+      {
+        "name": "Arjun Sethi",
+        "title": "Co-Founder",
+        "twitter": "arjunblj",
+        "focus": [
+          "Fintech",
+          "Crypto"
+        ]
+      }
+    ],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Data-driven approach. Quant background aligns with trading infra.",
     "source": "seed-list"
@@ -637,12 +1819,25 @@
   {
     "name": "Reciprocal Ventures",
     "type": "vc",
-    "thesis": ["AI", "Infrastructure", "Crypto", "Developer Tools"],
-    "stage": ["pre-seed", "seed"],
-    "check_size": { "min": 100000, "max": 2000000 },
+    "thesis": [
+      "AI",
+      "Infrastructure",
+      "Crypto",
+      "Developer Tools"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 100000,
+      "max": 2000000
+    },
     "portfolio": [],
     "partners": [],
-    "geo": ["US"],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Early-stage AI + crypto focus. Small checks.",
     "source": "seed-list"
@@ -650,14 +1845,39 @@
   {
     "name": "Bain Capital Crypto",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure"],
-    "stage": ["seed", "series-a", "series-b"],
-    "check_size": { "min": 1000000, "max": 30000000 },
-    "portfolio": ["Celestia", "Sei", "Osmosis"],
-    "partners": [
-      { "name": "Stefan Cohen", "title": "Partner", "focus": ["Crypto", "Infrastructure"] }
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 30000000
+    },
+    "portfolio": [
+      "Celestia",
+      "Sei",
+      "Osmosis"
+    ],
+    "partners": [
+      {
+        "name": "Stefan Cohen",
+        "title": "Partner",
+        "focus": [
+          "Crypto",
+          "Infrastructure"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Bain Capital crypto arm. Well-resourced.",
     "source": "seed-list"
@@ -665,14 +1885,35 @@
   {
     "name": "Dialectic",
     "type": "crypto_fund",
-    "thesis": ["DeFi", "Trading", "AI", "Infrastructure"],
-    "stage": ["seed"],
-    "check_size": { "min": 100000, "max": 2000000 },
+    "thesis": [
+      "DeFi",
+      "Trading",
+      "AI",
+      "Infrastructure"
+    ],
+    "stage": [
+      "seed"
+    ],
+    "check_size": {
+      "min": 100000,
+      "max": 2000000
+    },
     "portfolio": [],
     "partners": [
-      { "name": "Ryan Zurrer", "title": "Founder", "twitter": "rzurrer", "focus": ["DeFi", "Trading"] }
+      {
+        "name": "Ryan Zurrer",
+        "title": "Founder",
+        "twitter": "rzurrer",
+        "focus": [
+          "DeFi",
+          "Trading"
+        ]
+      }
     ],
-    "geo": ["Switzerland", "Global"],
+    "geo": [
+      "Switzerland",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Trading + DeFi focus. Swiss-based.",
     "source": "seed-list"
@@ -680,12 +1921,30 @@
   {
     "name": "Distributed Global",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "Trading"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
-    "portfolio": ["Solana", "FTX", "Serum"],
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "Trading"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "Solana",
+      "FTX",
+      "Serum"
+    ],
     "partners": [],
-    "geo": ["US", "Global"],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Early Solana backer. Trading infrastructure interest.",
     "source": "seed-list"
@@ -693,14 +1952,34 @@
   {
     "name": "Slow Ventures",
     "type": "vc",
-    "thesis": ["Consumer", "Crypto", "AI"],
-    "stage": ["pre-seed", "seed"],
-    "check_size": { "min": 100000, "max": 2000000 },
+    "thesis": [
+      "Consumer",
+      "Crypto",
+      "AI"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 100000,
+      "max": 2000000
+    },
     "portfolio": [],
     "partners": [
-      { "name": "Sam Lessin", "title": "Partner", "twitter": "lessin", "focus": ["Consumer", "AI"] }
+      {
+        "name": "Sam Lessin",
+        "title": "Partner",
+        "twitter": "lessin",
+        "focus": [
+          "Consumer",
+          "AI"
+        ]
+      }
     ],
-    "geo": ["US"],
+    "geo": [
+      "US"
+    ],
     "status": "researching",
     "notes": "Consumer-first but AI + crypto interest growing.",
     "source": "seed-list"
@@ -708,12 +1987,31 @@
   {
     "name": "Mirana Ventures",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "AI"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 10000000 },
-    "portfolio": ["Celestia", "Scroll", "Sei"],
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "AI"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 10000000
+    },
+    "portfolio": [
+      "Celestia",
+      "Scroll",
+      "Sei"
+    ],
     "partners": [],
-    "geo": ["Hong Kong", "Asia", "Global"],
+    "geo": [
+      "Hong Kong",
+      "Asia",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Bybit-affiliated. HK-based. Strong regional alignment.",
     "source": "seed-list"
@@ -721,12 +2019,27 @@
   {
     "name": "Foresight Ventures",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "AI", "Infrastructure"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 10000000 },
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "AI",
+      "Infrastructure"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 10000000
+    },
     "portfolio": [],
     "partners": [],
-    "geo": ["Asia", "US", "Global"],
+    "geo": [
+      "Asia",
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Asia-focused crypto VC. Active deal flow.",
     "source": "seed-list"
@@ -734,12 +2047,26 @@
   {
     "name": "Superscrypt",
     "type": "vc",
-    "thesis": ["Infrastructure", "DeFi", "Developer Tools", "AI"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 500000, "max": 5000000 },
+    "thesis": [
+      "Infrastructure",
+      "DeFi",
+      "Developer Tools",
+      "AI"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 5000000
+    },
     "portfolio": [],
     "partners": [],
-    "geo": ["Singapore", "Asia"],
+    "geo": [
+      "Singapore",
+      "Asia"
+    ],
     "status": "researching",
     "notes": "Temasek-backed crypto VC. Singapore-based.",
     "source": "seed-list"
@@ -747,14 +2074,39 @@
   {
     "name": "Anagram",
     "type": "vc",
-    "thesis": ["Consumer", "DeFi", "AI", "Social"],
-    "stage": ["pre-seed", "seed"],
-    "check_size": { "min": 100000, "max": 3000000 },
-    "portfolio": ["Tensor", "Phantom"],
-    "partners": [
-      { "name": "Lily Liu", "title": "Partner", "twitter": "calilyliu", "focus": ["Solana", "Consumer"] }
+    "thesis": [
+      "Consumer",
+      "DeFi",
+      "AI",
+      "Social"
     ],
-    "geo": ["US", "Global"],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 100000,
+      "max": 3000000
+    },
+    "portfolio": [
+      "Tensor",
+      "Phantom"
+    ],
+    "partners": [
+      {
+        "name": "Lily Liu",
+        "title": "Partner",
+        "twitter": "calilyliu",
+        "focus": [
+          "Solana",
+          "Consumer"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Formerly Palardin. Consumer crypto + Solana focus. Does pre-seed.",
     "source": "seed-list"
@@ -762,14 +2114,667 @@
   {
     "name": "NGC Ventures",
     "type": "vc",
-    "thesis": ["Crypto", "DeFi", "Infrastructure", "AI"],
-    "stage": ["seed", "series-a"],
-    "check_size": { "min": 250000, "max": 5000000 },
+    "thesis": [
+      "Crypto",
+      "DeFi",
+      "Infrastructure",
+      "AI"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
     "portfolio": [],
     "partners": [],
-    "geo": ["Singapore", "Asia", "Global"],
+    "geo": [
+      "Singapore",
+      "Asia",
+      "Global"
+    ],
     "status": "researching",
     "notes": "Singapore-based crypto fund.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Point72 Ventures",
+    "type": "vc",
+    "thesis": [
+      "AI",
+      "Fintech",
+      "Trading",
+      "Quant"
+    ],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 20000000
+    },
+    "portfolio": [
+      "Acorns",
+      "Vestwell",
+      "MX Technologies"
+    ],
+    "partners": [
+      {
+        "name": "Sri Chandrasekar",
+        "title": "Managing Partner",
+        "twitter": "p72vc",
+        "focus": [
+          "AI",
+          "Fintech",
+          "Trading"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "Steve Cohen's quant trading VC arm. Deep alignment with AI + trading thesis.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Two Sigma Ventures",
+    "type": "vc",
+    "thesis": [
+      "AI",
+      "Fintech",
+      "Quant",
+      "Data",
+      "Trading Infrastructure"
+    ],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 10000000
+    },
+    "portfolio": [
+      "Wealthsimple",
+      "Remote",
+      "Distributional"
+    ],
+    "partners": [
+      {
+        "name": "Colin Beirne",
+        "title": "Partner",
+        "twitter": "csbeirne",
+        "focus": [
+          "AI",
+          "Fintech",
+          "Data"
+        ]
+      },
+      {
+        "name": "Villi Iltchev",
+        "title": "Partner",
+        "twitter": "villi",
+        "focus": [
+          "Enterprise",
+          "AI",
+          "Fintech"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "From Two Sigma ($60B quant hedge fund). They know what it takes to build profitable automated trading.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Coatue Management",
+    "type": "vc",
+    "thesis": [
+      "AI",
+      "Crypto",
+      "Fintech",
+      "Infrastructure"
+    ],
+    "stage": [
+      "series-a",
+      "series-b",
+      "growth"
+    ],
+    "check_size": {
+      "min": 5000000,
+      "max": 100000000
+    },
+    "portfolio": [
+      "OpenAI",
+      "Scale AI",
+      "Hugging Face",
+      "Robinhood"
+    ],
+    "partners": [
+      {
+        "name": "Philippe Laffont",
+        "title": "Founder & CIO",
+        "focus": [
+          "AI",
+          "Tech",
+          "Crypto"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "$54B AUM crossover fund. Backs OpenAI, Scale AI, Hugging Face AND Robinhood. Exact AI + fintech overlap.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Ribbit Capital",
+    "type": "vc",
+    "thesis": [
+      "Fintech",
+      "Crypto",
+      "Trading",
+      "DeFi"
+    ],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b",
+      "growth"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 50000000
+    },
+    "portfolio": [
+      "Robinhood",
+      "Coinbase",
+      "Revolut",
+      "Nubank",
+      "Morpho"
+    ],
+    "partners": [
+      {
+        "name": "Micky Malka",
+        "title": "Founder & Managing Partner",
+        "twitter": "mickymalka",
+        "focus": [
+          "Fintech",
+          "Crypto",
+          "Trading"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "Premier fintech VC. Early Robinhood + Coinbase + Morpho (DeFi). Understands retail trading UX + crypto.",
+    "source": "seed-list"
+  },
+  {
+    "name": "General Catalyst",
+    "type": "vc",
+    "thesis": [
+      "AI",
+      "Fintech",
+      "Infrastructure"
+    ],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b",
+      "growth"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 100000000
+    },
+    "portfolio": [
+      "Stripe",
+      "Ramp",
+      "Mistral"
+    ],
+    "partners": [
+      {
+        "name": "Hemant Taneja",
+        "title": "CEO & Managing Director",
+        "twitter": "htaneja",
+        "focus": [
+          "AI",
+          "Fintech"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Europe",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "$8B Fund XII. Backed Stripe, Ramp, Mistral. Explicit AI + fintech thesis.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Radical Ventures",
+    "type": "vc",
+    "thesis": [
+      "AI",
+      "Deep Learning",
+      "Foundation Models"
+    ],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 20000000
+    },
+    "portfolio": [
+      "Cohere",
+      "Waabi",
+      "Xanadu"
+    ],
+    "partners": [
+      {
+        "name": "Jordan Jacobs",
+        "title": "Co-founder & Managing Partner",
+        "twitter": "JordanJacobs10",
+        "focus": [
+          "AI",
+          "Deep Learning"
+        ]
+      }
+    ],
+    "geo": [
+      "Canada",
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "Pure AI VC. Geoffrey Hinton advisor. $650M early + $800M growth funds. AI technical credibility.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Lux Capital",
+    "type": "vc",
+    "thesis": [
+      "AI",
+      "Deep Tech",
+      "Defense Tech",
+      "Robotics"
+    ],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 30000000
+    },
+    "portfolio": [
+      "Anduril",
+      "Planet Labs",
+      "Echodyne"
+    ],
+    "partners": [
+      {
+        "name": "Josh Wolfe",
+        "title": "Co-founder & Managing Partner",
+        "twitter": "wolfejosh",
+        "focus": [
+          "AI",
+          "Deep Tech"
+        ]
+      },
+      {
+        "name": "Grace Isford",
+        "title": "Partner",
+        "twitter": "graceisford",
+        "focus": [
+          "AI Infrastructure",
+          "Dev Tooling"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "Contrarian deep tech VC. Grace Isford leads AI infra investing. Backs technical founders in high-stakes AI domains.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Index Ventures",
+    "type": "vc",
+    "thesis": [
+      "AI",
+      "Fintech",
+      "Enterprise",
+      "Infrastructure"
+    ],
+    "stage": [
+      "seed",
+      "series-a",
+      "series-b",
+      "growth"
+    ],
+    "check_size": {
+      "min": 1000000,
+      "max": 50000000
+    },
+    "portfolio": [
+      "Revolut",
+      "Robinhood",
+      "Figma",
+      "Scale AI",
+      "Mistral"
+    ],
+    "partners": [
+      {
+        "name": "Mike Volpi",
+        "title": "General Partner",
+        "twitter": "mvolpi",
+        "focus": [
+          "AI",
+          "Infrastructure"
+        ]
+      },
+      {
+        "name": "Hannah Seal",
+        "title": "Partner",
+        "twitter": "hannahseal_",
+        "focus": [
+          "Enterprise AI",
+          "Fintech"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Europe",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "$2.3B raised in 2024 for AI. Backed Revolut + Robinhood + Scale AI + Mistral. 108 unicorns.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Y Combinator",
+    "type": "vc",
+    "thesis": [
+      "AI",
+      "Fintech",
+      "Consumer",
+      "Crypto",
+      "Developer Tools"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 500000
+    },
+    "portfolio": [
+      "Coinbase",
+      "Stripe",
+      "OpenAI",
+      "Brex",
+      "Scale AI"
+    ],
+    "partners": [
+      {
+        "name": "Garry Tan",
+        "title": "CEO & President",
+        "twitter": "garrytan",
+        "focus": [
+          "AI",
+          "Consumer",
+          "Developer Tools"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "World's top accelerator. Backed Coinbase, Stripe, OpenAI. W24 had 86 AI startups. Brand + network transformative.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Elad Gil",
+    "type": "angel",
+    "thesis": [
+      "AI",
+      "Fintech",
+      "Crypto",
+      "Infrastructure"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 250000,
+      "max": 5000000
+    },
+    "portfolio": [
+      "Coinbase",
+      "Stripe",
+      "Perplexity",
+      "Harvey",
+      "Mistral",
+      "Character.AI"
+    ],
+    "partners": [
+      {
+        "name": "Elad Gil",
+        "title": "Angel Investor",
+        "twitter": "eladgil",
+        "focus": [
+          "AI",
+          "Fintech",
+          "Crypto"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "Forbes Midas #6 2024. Most prolific AI angel. His check signals PMF to the entire VC ecosystem.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Naval Ravikant",
+    "type": "angel",
+    "thesis": [
+      "Crypto",
+      "AI",
+      "Web3",
+      "Consumer"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 100000,
+      "max": 1000000
+    },
+    "portfolio": [
+      "Twitter",
+      "Uber",
+      "Coinbase",
+      "AngelList"
+    ],
+    "partners": [
+      {
+        "name": "Naval Ravikant",
+        "title": "Angel / Chairman AngelList",
+        "twitter": "naval",
+        "focus": [
+          "Crypto",
+          "AI"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "AngelList founder. 1M+ followers. Co-founded MetaStable (crypto hedge fund) + CoinList. Huge signal value.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Santiago Santos",
+    "type": "angel",
+    "thesis": [
+      "DeFi",
+      "Web3",
+      "Crypto Infrastructure"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed"
+    ],
+    "check_size": {
+      "min": 50000,
+      "max": 500000
+    },
+    "portfolio": [
+      "NEAR",
+      "LayerZero",
+      "Alliance DAO",
+      "Morpho",
+      "Aave"
+    ],
+    "partners": [
+      {
+        "name": "Santiago Santos",
+        "title": "Angel / Founder EON Capital",
+        "twitter": "santiagoroel",
+        "focus": [
+          "DeFi",
+          "Web3"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "Former ParaFi Capital. One of the most respected DeFi angels. Deep on-chain trading knowledge.",
+    "source": "seed-list"
+  },
+  {
+    "name": "Arthur Hayes / Maelstrom",
+    "type": "crypto_fund",
+    "thesis": [
+      "Crypto Trading",
+      "DeFi",
+      "Trading Infrastructure",
+      "Stablecoins"
+    ],
+    "stage": [
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 500000,
+      "max": 10000000
+    },
+    "portfolio": [
+      "Ethena",
+      "ether.fi",
+      "Pendle",
+      "Solayer"
+    ],
+    "partners": [
+      {
+        "name": "Arthur Hayes",
+        "title": "CIO / BitMEX Co-founder",
+        "twitter": "CryptoHayes",
+        "focus": [
+          "Crypto Trading",
+          "DeFi",
+          "Macro"
+        ]
+      }
+    ],
+    "geo": [
+      "Global",
+      "Asia"
+    ],
+    "status": "researching",
+    "notes": "Built BitMEX \u2014 nobody understands crypto trading infra better. $250M PE fund for crypto infra. Direct strategic fit.",
+    "source": "seed-list"
+  },
+  {
+    "name": "6th Man Ventures",
+    "type": "crypto_fund",
+    "thesis": [
+      "Crypto",
+      "AI",
+      "DeFi",
+      "DePin"
+    ],
+    "stage": [
+      "pre-seed",
+      "seed",
+      "series-a"
+    ],
+    "check_size": {
+      "min": 100000,
+      "max": 4000000
+    },
+    "portfolio": [
+      "Magic Eden",
+      "io.net",
+      "Livepeer"
+    ],
+    "partners": [
+      {
+        "name": "Mike Dudas",
+        "title": "Founder & GP",
+        "twitter": "mdudas",
+        "focus": [
+          "Crypto",
+          "AI",
+          "DeFi"
+        ]
+      }
+    ],
+    "geo": [
+      "US",
+      "Global"
+    ],
+    "status": "researching",
+    "notes": "Ex-The Block CEO. $145M Fund II. Portfolio includes io.net (AI+crypto) + Magic Eden (Solana). Native AI-crypto thesis.",
     "source": "seed-list"
   }
 ]
