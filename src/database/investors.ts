@@ -6,7 +6,17 @@ export interface Partner {
   twitter?: string;
   linkedin?: string;
   email?: string;
+  email_pattern?: string;
   focus: string[];
+  notes?: string;
+}
+
+export interface RecentDeal {
+  company: string;
+  round: string;
+  amount: string;
+  date: string;
+  relevance?: string;
 }
 
 export interface Investor {
@@ -28,6 +38,8 @@ export interface Investor {
     | "committed";
   score: number;
   notes: string;
+  recent_deals: RecentDeal[];
+  donut_relevance: string;
   last_activity: string;
   source: string;
 }
@@ -46,6 +58,8 @@ interface InvestorRow {
   status: string;
   score: number;
   notes: string;
+  recent_deals: string;
+  donut_relevance: string;
   last_activity: string;
   source: string;
 }
@@ -64,6 +78,8 @@ function rowToInvestor(row: InvestorRow): Investor {
     status: row.status as Investor["status"],
     score: row.score,
     notes: row.notes,
+    recent_deals: JSON.parse(row.recent_deals || "[]"),
+    donut_relevance: row.donut_relevance || "",
     last_activity: row.last_activity,
     source: row.source,
   };
@@ -72,8 +88,8 @@ function rowToInvestor(row: InvestorRow): Investor {
 export function createInvestor(investor: Investor): void {
   const db = getDb();
   db.run(
-    `INSERT OR REPLACE INTO investors (id, name, type, thesis, stage, check_size_min, check_size_max, portfolio, partners, geo, status, score, notes, last_activity, source, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))`,
+    `INSERT OR REPLACE INTO investors (id, name, type, thesis, stage, check_size_min, check_size_max, portfolio, partners, geo, status, score, notes, recent_deals, donut_relevance, last_activity, source, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))`,
     [
       investor.id,
       investor.name,
@@ -88,6 +104,8 @@ export function createInvestor(investor: Investor): void {
       investor.status,
       investor.score,
       investor.notes,
+      JSON.stringify(investor.recent_deals || []),
+      investor.donut_relevance || "",
       investor.last_activity,
       investor.source,
     ]
@@ -132,7 +150,7 @@ export function listInvestors(filters?: {
     params.push(`%${filters.thesis}%`);
   }
 
-  sql += " ORDER BY score DESC";
+  sql += " ORDER BY score DESC, name ASC";
 
   const rows = db.query<InvestorRow, string[]>(sql).all(...params);
   return rows.map(rowToInvestor);
@@ -146,70 +164,28 @@ export function updateInvestor(
   const setClauses: string[] = [];
   const params: (string | number)[] = [];
 
-  if (updates.name !== undefined) {
-    setClauses.push("name = ?");
-    params.push(updates.name);
-  }
-  if (updates.type !== undefined) {
-    setClauses.push("type = ?");
-    params.push(updates.type);
-  }
-  if (updates.thesis !== undefined) {
-    setClauses.push("thesis = ?");
-    params.push(JSON.stringify(updates.thesis));
-  }
-  if (updates.stage !== undefined) {
-    setClauses.push("stage = ?");
-    params.push(JSON.stringify(updates.stage));
-  }
-  if (updates.check_size !== undefined) {
-    setClauses.push("check_size_min = ?");
-    params.push(updates.check_size.min);
-    setClauses.push("check_size_max = ?");
-    params.push(updates.check_size.max);
-  }
-  if (updates.portfolio !== undefined) {
-    setClauses.push("portfolio = ?");
-    params.push(JSON.stringify(updates.portfolio));
-  }
-  if (updates.partners !== undefined) {
-    setClauses.push("partners = ?");
-    params.push(JSON.stringify(updates.partners));
-  }
-  if (updates.geo !== undefined) {
-    setClauses.push("geo = ?");
-    params.push(JSON.stringify(updates.geo));
-  }
-  if (updates.status !== undefined) {
-    setClauses.push("status = ?");
-    params.push(updates.status);
-  }
-  if (updates.score !== undefined) {
-    setClauses.push("score = ?");
-    params.push(updates.score);
-  }
-  if (updates.notes !== undefined) {
-    setClauses.push("notes = ?");
-    params.push(updates.notes);
-  }
-  if (updates.last_activity !== undefined) {
-    setClauses.push("last_activity = ?");
-    params.push(updates.last_activity);
-  }
-  if (updates.source !== undefined) {
-    setClauses.push("source = ?");
-    params.push(updates.source);
-  }
+  if (updates.name !== undefined) { setClauses.push("name = ?"); params.push(updates.name); }
+  if (updates.type !== undefined) { setClauses.push("type = ?"); params.push(updates.type); }
+  if (updates.thesis !== undefined) { setClauses.push("thesis = ?"); params.push(JSON.stringify(updates.thesis)); }
+  if (updates.stage !== undefined) { setClauses.push("stage = ?"); params.push(JSON.stringify(updates.stage)); }
+  if (updates.check_size !== undefined) { setClauses.push("check_size_min = ?"); params.push(updates.check_size.min); setClauses.push("check_size_max = ?"); params.push(updates.check_size.max); }
+  if (updates.portfolio !== undefined) { setClauses.push("portfolio = ?"); params.push(JSON.stringify(updates.portfolio)); }
+  if (updates.partners !== undefined) { setClauses.push("partners = ?"); params.push(JSON.stringify(updates.partners)); }
+  if (updates.geo !== undefined) { setClauses.push("geo = ?"); params.push(JSON.stringify(updates.geo)); }
+  if (updates.status !== undefined) { setClauses.push("status = ?"); params.push(updates.status); }
+  if (updates.score !== undefined) { setClauses.push("score = ?"); params.push(updates.score); }
+  if (updates.notes !== undefined) { setClauses.push("notes = ?"); params.push(updates.notes); }
+  if (updates.recent_deals !== undefined) { setClauses.push("recent_deals = ?"); params.push(JSON.stringify(updates.recent_deals)); }
+  if (updates.donut_relevance !== undefined) { setClauses.push("donut_relevance = ?"); params.push(updates.donut_relevance); }
+  if (updates.last_activity !== undefined) { setClauses.push("last_activity = ?"); params.push(updates.last_activity); }
+  if (updates.source !== undefined) { setClauses.push("source = ?"); params.push(updates.source); }
 
   if (setClauses.length === 0) return;
 
   setClauses.push("updated_at = datetime('now')");
   params.push(id);
 
-  db.run(
-    `UPDATE investors SET ${setClauses.join(", ")} WHERE id = ?`,
-    params
-  );
+  db.run(`UPDATE investors SET ${setClauses.join(", ")} WHERE id = ?`, params);
 }
 
 export function deleteInvestor(id: string): void {

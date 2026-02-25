@@ -2164,13 +2164,21 @@
     ],
     "partners": [
       {
-        "name": "Sri Chandrasekar",
-        "title": "Managing Partner",
-        "twitter": "p72vc",
+        "name": "Pete Casella",
+        "title": "Partner, Fintech",
+        "twitter": "petecasella",
         "focus": [
-          "AI",
-          "Fintech",
-          "Trading"
+          "Trading Infrastructure",
+          "Crypto",
+          "Capital Markets"
+        ]
+      },
+      {
+        "name": "Tara Stokes",
+        "title": "Partner",
+        "focus": [
+          "Early Stage",
+          "Fintech"
         ]
       }
     ],
@@ -2179,8 +2187,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "Steve Cohen's quant trading VC arm. Deep alignment with AI + trading thesis.",
-    "source": "seed-list"
+    "notes": "Steve Cohen's quant trading VC. Deep alignment with AI+trading thesis. Polymarket bet shows crypto conviction. Note: sold fintech portfolio Jan 2026, crypto team now primary.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Polymarket",
+        "round": "Series B",
+        "amount": "$45M",
+        "date": "2024-Q2"
+      },
+      {
+        "company": "Zerohash",
+        "round": "Series B/C",
+        "amount": "Undisclosed",
+        "date": "2024"
+      },
+      {
+        "company": "Syncfy",
+        "round": "Seed",
+        "amount": "$10M",
+        "date": "2024-Q3"
+      }
+    ],
+    "donut_relevance": "Steve Cohen's quant trading VC. Deep alignment with AI+trading thesis. Polymarket bet shows crypto conviction. Note: sold fintech portfolio Jan 2026, crypto team now primary."
   },
   {
     "name": "Two Sigma Ventures",
@@ -2208,23 +2237,21 @@
     ],
     "partners": [
       {
-        "name": "Colin Beirne",
+        "name": "Dan Abelon",
         "title": "Partner",
-        "twitter": "csbeirne",
+        "twitter": "danabelon",
         "focus": [
-          "AI",
           "Fintech",
+          "AI",
           "Data"
         ]
       },
       {
-        "name": "Villi Iltchev",
+        "name": "Frances Schwiep",
         "title": "Partner",
-        "twitter": "villi",
         "focus": [
-          "Enterprise",
-          "AI",
-          "Fintech"
+          "Early Stage",
+          "AI"
         ]
       }
     ],
@@ -2233,8 +2260,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "From Two Sigma ($60B quant hedge fund). They know what it takes to build profitable automated trading.",
-    "source": "seed-list"
+    "notes": "From Two Sigma ($60B quant hedge fund). Note: 3 partners spun out to launch Metalayer — dedicated crypto fund. Parent VC still does AI+fintech. Donut fits both.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Steadily",
+        "round": "Series C",
+        "amount": "$30M",
+        "date": "2025-Q2"
+      },
+      {
+        "company": "Distributional",
+        "round": "Series A",
+        "amount": "$19M",
+        "date": "2024-Q4"
+      },
+      {
+        "company": "Metalayer (spinout)",
+        "round": "Fund I",
+        "amount": "$25M crypto fund",
+        "date": "2024-Q4"
+      }
+    ],
+    "donut_relevance": "From Two Sigma ($60B quant hedge fund). Note: 3 partners spun out to launch Metalayer — dedicated crypto fund. Parent VC still does AI+fintech. Donut fits both."
   },
   {
     "name": "Coatue Management",
@@ -2264,9 +2312,27 @@
       {
         "name": "Philippe Laffont",
         "title": "Founder & CIO",
+        "twitter": "PhilippeLaffont",
         "focus": [
           "AI",
           "Tech",
+          "Crypto"
+        ]
+      },
+      {
+        "name": "Rahul Kishore",
+        "title": "Senior MD, Fintech",
+        "focus": [
+          "Fintech",
+          "Public+Private"
+        ]
+      },
+      {
+        "name": "Thomas Laffont",
+        "title": "Co-Founder, PE",
+        "twitter": "ThomasLaffont",
+        "focus": [
+          "Private Investments",
           "Crypto"
         ]
       }
@@ -2276,8 +2342,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "$54B AUM crossover fund. Backs OpenAI, Scale AI, Hugging Face AND Robinhood. Exact AI + fintech overlap.",
-    "source": "seed-list"
+    "notes": "Philippe Laffont Feb 2026: 'the world is moving to the token economy.' Pattern: backs vertical AI apps (Cursor for devs, Harvey for lawyers) = Donut for crypto traders. $50M-300M checks.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Cursor (Anysphere)",
+        "round": "Series D",
+        "amount": "$2.3B at $29.3B val",
+        "date": "2025-Q2"
+      },
+      {
+        "company": "Harvey",
+        "round": "Series E",
+        "amount": "$300M at $5B val",
+        "date": "2025-Q1"
+      },
+      {
+        "company": "Hut 8",
+        "round": "Strategic",
+        "amount": "$150M convertible",
+        "date": "2024-Q3"
+      }
+    ],
+    "donut_relevance": "Philippe Laffont Feb 2026: 'the world is moving to the token economy.' Pattern: backs vertical AI apps (Cursor for devs, Harvey for lawyers) = Donut for crypto traders. $50M-300M checks."
   },
   {
     "name": "Ribbit Capital",
@@ -2309,11 +2396,20 @@
       {
         "name": "Micky Malka",
         "title": "Founder & Managing Partner",
-        "twitter": "mickymalka",
+        "twitter": "malka",
         "focus": [
           "Fintech",
           "Crypto",
           "Trading"
+        ]
+      },
+      {
+        "name": "Nick Shalek",
+        "title": "General Partner",
+        "twitter": "nickshalek",
+        "focus": [
+          "Consumer Fintech",
+          "Trading Apps"
         ]
       }
     ],
@@ -2322,8 +2418,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "Premier fintech VC. Early Robinhood + Coinbase + Morpho (DeFi). Understands retail trading UX + crypto.",
-    "source": "seed-list"
+    "notes": "Premier fintech+crypto crossover. Led Morpho $50M (DeFi lending), backed Coinbase+Robinhood+Revolut+Nubank. New $500M fund ('Ribbit Y') March 2025 = fresh capital.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Morpho",
+        "round": "Series B (led)",
+        "amount": "$50M",
+        "date": "2024-Q3"
+      },
+      {
+        "company": "Privy",
+        "round": "Series B (led)",
+        "amount": "$15M",
+        "date": "2025-Q1"
+      },
+      {
+        "company": "One (OnePay)",
+        "round": "Series D",
+        "amount": "$300M at $2.5B val",
+        "date": "2024-Q4"
+      }
+    ],
+    "donut_relevance": "Premier fintech+crypto crossover. Led Morpho $50M (DeFi lending), backed Coinbase+Robinhood+Revolut+Nubank. New $500M fund ('Ribbit Y') March 2025 = fresh capital."
   },
   {
     "name": "General Catalyst",
@@ -2352,10 +2469,20 @@
       {
         "name": "Hemant Taneja",
         "title": "CEO & Managing Director",
-        "twitter": "htaneja",
+        "twitter": "hemant_taneja",
         "focus": [
           "AI",
-          "Fintech"
+          "Financial Services"
+        ]
+      },
+      {
+        "name": "Kyle Doherty",
+        "title": "Managing Director, Crypto",
+        "twitter": "kdoherty_gc",
+        "focus": [
+          "Crypto",
+          "DeFi",
+          "Infrastructure"
         ]
       }
     ],
@@ -2365,8 +2492,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "$8B Fund XII. Backed Stripe, Ramp, Mistral. Explicit AI + fintech thesis.",
-    "source": "seed-list"
+    "notes": "Co-led Ostium (on-chain perps for TradFi assets) Dec 2025 — DIRECT comparable to Donut's perps trading. $8B fund with explicit AI+financial services mandate. Kite AI = AI agent payment rails.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Ostium",
+        "round": "Series A (co-led)",
+        "amount": "$20M at $250M val",
+        "date": "2025-Q4"
+      },
+      {
+        "company": "Kite AI",
+        "round": "Series A (co-led)",
+        "amount": "$18M",
+        "date": "2025-Q3"
+      },
+      {
+        "company": "Fund XII",
+        "round": "Fund",
+        "amount": "$8B raised",
+        "date": "2024-Q4"
+      }
+    ],
+    "donut_relevance": "Co-led Ostium (on-chain perps for TradFi assets) Dec 2025 — DIRECT comparable to Donut's perps trading. $8B fund with explicit AI+financial services mandate. Kite AI = AI agent payment rails."
   },
   {
     "name": "Radical Ventures",
@@ -2394,10 +2542,20 @@
       {
         "name": "Jordan Jacobs",
         "title": "Co-founder & Managing Partner",
-        "twitter": "JordanJacobs10",
+        "twitter": "jjacobs22",
         "focus": [
           "AI",
-          "Deep Learning"
+          "Deep Learning",
+          "Financial AI"
+        ]
+      },
+      {
+        "name": "Tomi Poutanen",
+        "title": "Co-founder & Partner",
+        "twitter": "tomi_poutanen",
+        "focus": [
+          "AI",
+          "Enterprise AI"
         ]
       }
     ],
@@ -2407,8 +2565,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "Pure AI VC. Geoffrey Hinton advisor. $650M early + $800M growth funds. AI technical credibility.",
-    "source": "seed-list"
+    "notes": "Geoffrey Hinton's fund. $1.45B in fresh capital. Jordan Jacobs co-founded Layer 6 AI (acquired by TD Bank) — AI applied to financial services background. Not a ChatGPT wrapper thesis.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Cohere",
+        "round": "Series D (follow-on)",
+        "amount": "$5.5B val",
+        "date": "2025"
+      },
+      {
+        "company": "Spara",
+        "round": "Seed",
+        "amount": "$15M",
+        "date": "2025"
+      },
+      {
+        "company": "Fund IV",
+        "round": "Fund",
+        "amount": "$650M early + $800M growth = $1.45B",
+        "date": "2024-2025"
+      }
+    ],
+    "donut_relevance": "Geoffrey Hinton's fund. $1.45B in fresh capital. Jordan Jacobs co-founded Layer 6 AI (acquired by TD Bank) — AI applied to financial services background. Not a ChatGPT wrapper thesis."
   },
   {
     "name": "Lux Capital",
@@ -2435,21 +2614,23 @@
     ],
     "partners": [
       {
-        "name": "Josh Wolfe",
-        "title": "Co-founder & Managing Partner",
-        "twitter": "wolfejosh",
-        "focus": [
-          "AI",
-          "Deep Tech"
-        ]
-      },
-      {
         "name": "Grace Isford",
         "title": "Partner",
         "twitter": "graceisford",
         "focus": [
           "AI Infrastructure",
+          "AI Applications",
           "Dev Tooling"
+        ]
+      },
+      {
+        "name": "Josh Wolfe",
+        "title": "Co-founder & Managing Partner",
+        "twitter": "wolfejosh",
+        "focus": [
+          "Deep Tech",
+          "Crypto-TradFi",
+          "Frontier"
         ]
       }
     ],
@@ -2458,8 +2639,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "Contrarian deep tech VC. Grace Isford leads AI infra investing. Backs technical founders in high-stakes AI domains.",
-    "source": "seed-list"
+    "notes": "Led Erebor $350M (crypto-native national bank) — clearest signal of crypto-TradFi convergence conviction. Grace Isford (youngest partner ever) leads AI investments incl Runway, LangChain.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Erebor",
+        "round": "Series A (led)",
+        "amount": "$350M at $4.35B val",
+        "date": "2025-Q4"
+      },
+      {
+        "company": "Physical Intelligence",
+        "round": "Series A",
+        "amount": "$400M",
+        "date": "2024-Q4"
+      },
+      {
+        "company": "Fund IX",
+        "round": "Fund",
+        "amount": "$1.5B (largest ever)",
+        "date": "2026-Q1"
+      }
+    ],
+    "donut_relevance": "Led Erebor $350M (crypto-native national bank) — clearest signal of crypto-TradFi convergence conviction. Grace Isford (youngest partner ever) leads AI investments incl Runway, LangChain."
   },
   {
     "name": "Index Ventures",
@@ -2489,21 +2691,22 @@
     ],
     "partners": [
       {
-        "name": "Mike Volpi",
-        "title": "General Partner",
-        "twitter": "mvolpi",
+        "name": "Danny Rimer",
+        "title": "Partner",
+        "twitter": "dannyrimer",
         "focus": [
-          "AI",
-          "Infrastructure"
+          "Fintech",
+          "Marketplaces",
+          "AI"
         ]
       },
       {
-        "name": "Hannah Seal",
+        "name": "Nina Achadjian",
         "title": "Partner",
-        "twitter": "hannahseal_",
+        "twitter": "nachadjian",
         "focus": [
-          "Enterprise AI",
-          "Fintech"
+          "Early-stage Fintech",
+          "Vertical SaaS"
         ]
       }
     ],
@@ -2513,8 +2716,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "$2.3B raised in 2024 for AI. Backed Revolut + Robinhood + Scale AI + Mistral. 108 unicorns.",
-    "source": "seed-list"
+    "notes": "Co-led Bridge Series A (stablecoin infra → Stripe acquired for $1.1B). Avoids speculation, backs crypto rails + UX. Pattern: Robinhood + Bridge = next-gen trading/financial infra. $2.3B fresh.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Bridge (→ Stripe $1.1B acq)",
+        "round": "Series A (co-led)",
+        "amount": "$58M",
+        "date": "2024-Q1"
+      },
+      {
+        "company": "Mirelo AI",
+        "round": "Seed (co-led w/ a16z)",
+        "amount": "$41M",
+        "date": "2025"
+      },
+      {
+        "company": "New Funds",
+        "round": "Fund",
+        "amount": "$2.3B ($800M venture + $1.5B growth)",
+        "date": "2024-Q3"
+      }
+    ],
+    "donut_relevance": "Co-led Bridge Series A (stablecoin infra → Stripe acquired for $1.1B). Avoids speculation, backs crypto rails + UX. Pattern: Robinhood + Bridge = next-gen trading/financial infra. $2.3B fresh."
   },
   {
     "name": "Y Combinator",
@@ -2549,7 +2773,17 @@
         "focus": [
           "AI",
           "Consumer",
-          "Developer Tools"
+          "Crypto"
+        ]
+      },
+      {
+        "name": "Tom Blomfield",
+        "title": "Group Partner",
+        "twitter": "t_blom",
+        "focus": [
+          "Fintech",
+          "Neobanking",
+          "Trading"
         ]
       }
     ],
@@ -2558,8 +2792,23 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "World's top accelerator. Backed Coinbase, Stripe, OpenAI. W24 had 86 AI startups. Brand + network transformative.",
-    "source": "seed-list"
+    "notes": "Now offers seed investment in USDC on Solana — explicitly signaling Solana-native crypto companies. Garry Tan backed Coinbase seed. Tom Blomfield (Monzo founder) is partner — fintech background.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "YC S25 batch",
+        "round": "Seed",
+        "amount": "$500K standard (now offers USDC on Solana)",
+        "date": "2025"
+      },
+      {
+        "company": "Coinbase (historical)",
+        "round": "Seed",
+        "amount": "YC standard",
+        "date": "2012"
+      }
+    ],
+    "donut_relevance": "Now offers seed investment in USDC on Solana — explicitly signaling Solana-native crypto companies. Garry Tan backed Coinbase seed. Tom Blomfield (Monzo founder) is partner — fintech background."
   },
   {
     "name": "Elad Gil",
@@ -2590,13 +2839,16 @@
     "partners": [
       {
         "name": "Elad Gil",
-        "title": "Angel Investor",
+        "title": "Solo GP, Gil Ventures",
         "twitter": "eladgil",
         "focus": [
           "AI",
           "Fintech",
-          "Crypto"
-        ]
+          "Crypto",
+          "Infrastructure"
+        ],
+        "linkedin": "eladgil",
+        "email_pattern": "via eladgil.com or Twitter DM"
       }
     ],
     "geo": [
@@ -2604,8 +2856,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "Forbes Midas #6 2024. Most prolific AI angel. His check signals PMF to the entire VC ecosystem.",
-    "source": "seed-list"
+    "notes": "$800M solo GP fund. Forbes Midas #6 2024. Explicitly calls 'financial tooling and fintech' a wide-open AI opportunity. Backed Coinbase seed. His check = instant signal to entire VC ecosystem.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Eon",
+        "round": "Series D (led)",
+        "amount": "$300M at $4B val",
+        "date": "2025"
+      },
+      {
+        "company": "Tako",
+        "round": "Seed",
+        "amount": "$5.75M",
+        "date": "2024-Q4"
+      },
+      {
+        "company": "Perplexity, Harvey, Mistral",
+        "round": "Various",
+        "amount": "$250K-$20M range",
+        "date": "2024-2025"
+      }
+    ],
+    "donut_relevance": "$800M solo GP fund. Forbes Midas #6 2024. Explicitly calls 'financial tooling and fintech' a wide-open AI opportunity. Backed Coinbase seed. His check = instant signal to entire VC ecosystem."
   },
   {
     "name": "Naval Ravikant",
@@ -2637,8 +2910,11 @@
         "twitter": "naval",
         "focus": [
           "Crypto",
-          "AI"
-        ]
+          "AI",
+          "Philosophy"
+        ],
+        "linkedin": "naval-ravikant",
+        "email_pattern": "Twitter DM only. Cold works if exceptionally concise."
       }
     ],
     "geo": [
@@ -2646,8 +2922,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "AngelList founder. 1M+ followers. Co-founded MetaStable (crypto hedge fund) + CoinList. Huge signal value.",
-    "source": "seed-list"
+    "notes": "Co-founded MetaStable Capital (crypto hedge fund) + CoinList. 22 crypto investments. Note: called Solana 'gambling platform' 2024 — pitch Donut as the infrastructure making on-chain trading sophisticated, not speculative.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Quanta",
+        "round": "Series A",
+        "amount": "Undisclosed",
+        "date": "2025-Q4"
+      },
+      {
+        "company": "Tako",
+        "round": "Seed (w/ Elad Gil)",
+        "amount": "$5.75M",
+        "date": "2024-Q4"
+      },
+      {
+        "company": "Perplexity",
+        "round": "Follow-on",
+        "amount": "Undisclosed",
+        "date": "2024-2025"
+      }
+    ],
+    "donut_relevance": "Co-founded MetaStable Capital (crypto hedge fund) + CoinList. 22 crypto investments. Note: called Solana 'gambling platform' 2024 — pitch Donut as the infrastructure making on-chain trading sophisticated, not speculative."
   },
   {
     "name": "Santiago Santos",
@@ -2674,13 +2971,16 @@
     ],
     "partners": [
       {
-        "name": "Santiago Santos",
-        "title": "Angel / Founder EON Capital",
+        "name": "Santiago Roel Santos",
+        "title": "Founder & CEO, Inversion Capital",
         "twitter": "santiagoroel",
         "focus": [
           "DeFi",
-          "Web3"
-        ]
+          "Web3",
+          "Crypto Infrastructure"
+        ],
+        "linkedin": "santiago-roel-santos",
+        "email_pattern": "santiago@inversioncap.com. Very active on Twitter."
       }
     ],
     "geo": [
@@ -2688,8 +2988,29 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "Former ParaFi Capital. One of the most respected DeFi angels. Deep on-chain trading knowledge.",
-    "source": "seed-list"
+    "notes": "150+ crypto investments. Ex-ParaFi Capital. Now runs Inversion Capital ($26.5M). Bridges institutional finance and on-chain DeFi. His check opens doors to every DeFi protocol Donut integrates with.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Inversion Capital",
+        "round": "Seed fund",
+        "amount": "$26.5M",
+        "date": "2025-Q3"
+      },
+      {
+        "company": "Fluent Labs",
+        "round": "Series A",
+        "amount": "Undisclosed",
+        "date": "2025-Q1"
+      },
+      {
+        "company": "MegaETH, Blast, NEAR, LayerZero",
+        "round": "Angel",
+        "amount": "Various",
+        "date": "2023-2025"
+      }
+    ],
+    "donut_relevance": "150+ crypto investments. Ex-ParaFi Capital. Now runs Inversion Capital ($26.5M). Bridges institutional finance and on-chain DeFi. His check opens doors to every DeFi protocol Donut integrates with."
   },
   {
     "name": "Arthur Hayes / Maelstrom",
@@ -2716,14 +3037,28 @@
     ],
     "partners": [
       {
+        "name": "Akshat Vaidya",
+        "title": "Co-Founder & Head of Investments",
+        "twitter": "akshat_vaidya",
+        "focus": [
+          "DeFi",
+          "Trading Infra",
+          "Crypto"
+        ],
+        "linkedin": "akshat-vaidya",
+        "email_pattern": "info@maelstrom.fund. Primary deal contact."
+      },
+      {
         "name": "Arthur Hayes",
-        "title": "CIO / BitMEX Co-founder",
+        "title": "CIO & Founder",
         "twitter": "CryptoHayes",
         "focus": [
           "Crypto Trading",
-          "DeFi",
-          "Macro"
-        ]
+          "Macro",
+          "DeFi"
+        ],
+        "linkedin": "arthurhayes",
+        "email_pattern": "Engage Akshat first. Arthur responds to strong macro-narrative founders."
       }
     ],
     "geo": [
@@ -2731,8 +3066,29 @@
       "Asia"
     ],
     "status": "researching",
-    "notes": "Built BitMEX \u2014 nobody understands crypto trading infra better. $250M PE fund for crypto infra. Direct strategic fit.",
-    "source": "seed-list"
+    "notes": "BitMEX founder invented the perpetual swap Donut users trade. $250M PE fund explicitly targeting 'trading infrastructure and analytics startups.' 37.5% portfolio in DeFi. Direct strategic fit.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "Ethena",
+        "round": "Strategic (co-led)",
+        "amount": "$14M at $300M val",
+        "date": "2024-Q1"
+      },
+      {
+        "company": "Infinit",
+        "round": "Seed",
+        "amount": "$6M",
+        "date": "2024"
+      },
+      {
+        "company": "Maelstrom PE Fund",
+        "round": "Fund",
+        "amount": "$250M target (first close Mar 2026)",
+        "date": "2025-Q4"
+      }
+    ],
+    "donut_relevance": "BitMEX founder invented the perpetual swap Donut users trade. $250M PE fund explicitly targeting 'trading infrastructure and analytics startups.' 37.5% portfolio in DeFi. Direct strategic fit."
   },
   {
     "name": "6th Man Ventures",
@@ -2760,13 +3116,28 @@
     "partners": [
       {
         "name": "Mike Dudas",
-        "title": "Founder & GP",
+        "title": "General Partner & Co-Founder",
         "twitter": "mdudas",
         "focus": [
           "Crypto",
           "AI",
+          "Solana",
           "DeFi"
-        ]
+        ],
+        "linkedin": "mdudas",
+        "email_pattern": "mike@6thman.ventures. Best via Twitter DM with trading volume metrics."
+      },
+      {
+        "name": "Serge Kassardjian",
+        "title": "Co-Founder & GP",
+        "twitter": "serge_kass",
+        "focus": [
+          "Crypto",
+          "Gaming",
+          "Infrastructure"
+        ],
+        "linkedin": "serge-kassardjian",
+        "email_pattern": "serge@6thman.ventures"
       }
     ],
     "geo": [
@@ -2774,7 +3145,28 @@
       "Global"
     ],
     "status": "researching",
-    "notes": "Ex-The Block CEO. $145M Fund II. Portfolio includes io.net (AI+crypto) + Magic Eden (Solana). Native AI-crypto thesis.",
-    "source": "seed-list"
+    "notes": "~50% portfolio in Solana ecosystem. Mike Dudas (ex-The Block CEO) is perma-online crypto power-user. Backs 'consumer crypto apps that generate real revenue.' Can open doors to Solana Foundation, Jupiter, every DeFi protocol.",
+    "source": "seed-list",
+    "recent_deals": [
+      {
+        "company": "375ai",
+        "round": "Series A",
+        "amount": "Undisclosed",
+        "date": "2025-Q4"
+      },
+      {
+        "company": "Legion",
+        "round": "Seed",
+        "amount": "Undisclosed",
+        "date": "2024-Q3"
+      },
+      {
+        "company": "Kintsu",
+        "round": "Seed",
+        "amount": "Undisclosed",
+        "date": "2024-Q3"
+      }
+    ],
+    "donut_relevance": "~50% portfolio in Solana ecosystem. Mike Dudas (ex-The Block CEO) is perma-online crypto power-user. Backs 'consumer crypto apps that generate real revenue.' Can open doors to Solana Foundation, Jupiter, every DeFi protocol."
   }
 ]

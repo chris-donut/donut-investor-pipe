@@ -4,34 +4,12 @@ import { randomUUID } from "crypto";
 import { getDb, closeDb } from "../storage/db";
 import { createInvestor, type Investor } from "./investors";
 
-interface SeedInvestor {
-  name: string;
-  type: Investor["type"];
-  thesis: string[];
-  stage: string[];
-  check_size: { min: number; max: number };
-  portfolio: string[];
-  partners: Array<{
-    name: string;
-    title: string;
-    twitter?: string;
-    linkedin?: string;
-    email?: string;
-    focus: string[];
-  }>;
-  geo: string[];
-  status: Investor["status"];
-  notes: string;
-  source: string;
-}
-
 const seedPath = join(import.meta.dir, "../../data/seed-investors.json");
 
 function seed(): void {
   const raw = readFileSync(seedPath, "utf-8");
-  const seedData: SeedInvestor[] = JSON.parse(raw);
+  const seedData: any[] = JSON.parse(raw);
 
-  // Ensure DB is initialized
   getDb();
 
   let created = 0;
@@ -49,6 +27,8 @@ function seed(): void {
       status: entry.status || "researching",
       score: 0,
       notes: entry.notes || "",
+      recent_deals: entry.recent_deals || [],
+      donut_relevance: entry.donut_relevance || "",
       last_activity: new Date().toISOString().split("T")[0],
       source: entry.source || "seed-list",
     };

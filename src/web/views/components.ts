@@ -19,6 +19,8 @@ function getScoreClass(score: number): string {
 
 export function investorCard(investor: Investor): string {
   const thesis = investor.thesis.slice(0, 4);
+  const dealCount = investor.recent_deals?.length || 0;
+  const hasRelevance = investor.donut_relevance && investor.donut_relevance.length > 0;
   return `
     <div class="investor-card"
          hx-get="/api/investors/${investor.id}"
@@ -29,6 +31,8 @@ export function investorCard(investor: Investor): string {
       <div class="meta">${investor.type} · ${investor.stage.join(", ")}</div>
       <div class="tags">
         ${thesis.map((t) => `<span class="${getThesisTagClass(t)}">${t}</span>`).join("")}
+        ${dealCount > 0 ? `<span class="tag" style="background:#f9731620;color:#f97316">${dealCount} deals</span>` : ""}
+        ${hasRelevance ? `<span class="tag" style="background:#22c55e20;color:#22c55e">✓ relevance</span>` : ""}
       </div>
       <select class="status-select"
               hx-post="/api/investors/${investor.id}/status"
@@ -152,26 +156,63 @@ export function investorDetail(
         </div>
       </div>
 
-      ${investor.partners.length > 0 ? `
-        <h2 style="margin-top:20px">Partners</h2>
-        <table>
+      ${investor.donut_relevance ? `
+        <div class="relevance-section" style="margin-top:20px">
+          <h2>Why Donut?</h2>
+          <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:16px;margin-top:8px;font-size:14px;color:var(--text);line-height:1.7">
+            ${escapeHtml(investor.donut_relevance)}
+          </div>
+        </div>
+      ` : ""}
+
+      ${investor.recent_deals && investor.recent_deals.length > 0 ? `
+        <h2 style="margin-top:20px">Recent Deals</h2>
+        <table style="margin-top:8px">
           <thead>
-            <tr><th>Name</th><th>Title</th><th>Focus</th><th>Twitter</th></tr>
+            <tr><th>Company</th><th>Round</th><th>Amount</th><th>Date</th></tr>
           </thead>
           <tbody>
-            ${investor.partners
+            ${investor.recent_deals
               .map(
-                (p) => `
+                (d) => `
               <tr>
-                <td>${p.name}</td>
-                <td>${p.title}</td>
-                <td>${p.focus.join(", ")}</td>
-                <td>${p.twitter ? `@${p.twitter}` : "—"}</td>
+                <td style="font-weight:600">${escapeHtml(d.company)}</td>
+                <td>${escapeHtml(d.round)}</td>
+                <td style="color:var(--green);font-weight:500">${escapeHtml(d.amount)}</td>
+                <td style="color:var(--text-dim)">${escapeHtml(d.date)}</td>
               </tr>`
               )
               .join("")}
           </tbody>
         </table>
+      ` : ""}
+
+      ${investor.partners.length > 0 ? `
+        <h2 style="margin-top:20px">Key Contacts</h2>
+        <div style="display:grid;gap:12px;margin-top:8px">
+          ${investor.partners
+            .map(
+              (p) => `
+            <div style="background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:14px 16px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start">
+                <div>
+                  <div style="font-weight:600;font-size:15px">${escapeHtml(p.name)}</div>
+                  <div style="color:var(--text-dim);font-size:13px;margin-top:2px">${escapeHtml(p.title)}</div>
+                </div>
+                <div style="display:flex;gap:8px;align-items:center">
+                  ${p.twitter ? `<a href="https://x.com/${p.twitter}" target="_blank" style="color:var(--blue);font-size:13px;text-decoration:none">@${escapeHtml(p.twitter)}</a>` : ""}
+                  ${p.linkedin ? `<a href="https://linkedin.com/in/${p.linkedin}" target="_blank" style="color:var(--blue);font-size:13px;text-decoration:none">LinkedIn</a>` : ""}
+                </div>
+              </div>
+              <div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:8px">
+                ${p.focus.map((f) => `<span class="${getThesisTagClass(f)}">${escapeHtml(f)}</span>`).join("")}
+              </div>
+              ${p.email_pattern ? `<div style="margin-top:8px;font-size:12px;color:var(--text-dim);font-style:italic">Reach: ${escapeHtml(p.email_pattern)}</div>` : ""}
+              ${p.notes ? `<div style="margin-top:6px;font-size:12px;color:var(--text-dim)">${escapeHtml(p.notes)}</div>` : ""}
+            </div>`
+            )
+            .join("")}
+        </div>
       ` : ""}
 
       <h2 style="margin-top:20px">Score Breakdown</h2>
@@ -247,7 +288,7 @@ export function investorTable(investors: Investor[]): string {
           <th>Stage</th>
           <th>Check Size</th>
           <th>Status</th>
-          <th>Geo</th>
+          <th>Deals</th>
         </tr>
       </thead>
       <tbody>
@@ -263,7 +304,7 @@ export function investorTable(investors: Investor[]): string {
             <td>${inv.stage.join(", ")}</td>
             <td>$${(inv.check_size.min / 1e6).toFixed(1)}M-$${(inv.check_size.max / 1e6).toFixed(1)}M</td>
             <td>${formatStatus(inv.status)}</td>
-            <td>${inv.geo.join(", ")}</td>
+            <td style="text-align:center">${inv.recent_deals?.length || 0}</td>
           </tr>`
           )
           .join("")}

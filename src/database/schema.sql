@@ -4,17 +4,19 @@ CREATE TABLE IF NOT EXISTS investors (
   id TEXT PRIMARY KEY,
   name TEXT NOT NULL UNIQUE,
   type TEXT NOT NULL CHECK(type IN ('vc', 'angel', 'family_office', 'crypto_fund')),
-  thesis TEXT NOT NULL DEFAULT '[]',          -- JSON array of strings
-  stage TEXT NOT NULL DEFAULT '[]',           -- JSON array of strings
+  thesis TEXT NOT NULL DEFAULT '[]',
+  stage TEXT NOT NULL DEFAULT '[]',
   check_size_min REAL DEFAULT 0,
   check_size_max REAL DEFAULT 0,
-  portfolio TEXT NOT NULL DEFAULT '[]',       -- JSON array of strings
-  partners TEXT NOT NULL DEFAULT '[]',        -- JSON array of Partner objects
-  geo TEXT NOT NULL DEFAULT '[]',             -- JSON array of strings
+  portfolio TEXT NOT NULL DEFAULT '[]',
+  partners TEXT NOT NULL DEFAULT '[]',
+  geo TEXT NOT NULL DEFAULT '[]',
   status TEXT NOT NULL DEFAULT 'researching'
     CHECK(status IN ('researching', 'to_reach', 'reached_out', 'in_conversation', 'passed', 'committed')),
   score INTEGER NOT NULL DEFAULT 0,
   notes TEXT NOT NULL DEFAULT '',
+  recent_deals TEXT NOT NULL DEFAULT '[]',
+  donut_relevance TEXT NOT NULL DEFAULT '',
   last_activity TEXT NOT NULL DEFAULT '',
   source TEXT NOT NULL DEFAULT '',
   created_at TEXT NOT NULL DEFAULT (datetime('now')),
