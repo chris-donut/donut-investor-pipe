@@ -1,82 +1,66 @@
-import { getDb, closeDb } from "./storage/db";
-import { listInvestors, countByStatus } from "./database/investors";
-import { runMatchingAndUpdate } from "./matching/engine";
+import { listInvestors, getInvestor, updateInvestor, countByStatus, countByType, totalAum } from "./database/investors";
+import { dashboardPage, investorApiResponse } from "./web/views/components";
 
-const args = process.argv.slice(2);
-const command = args[0];
+const server = Bun.serve({
+  port: 3456,
+  async fetch(req) {
+    const url = new URL(req.url);
+    const path = url.pathname;
 
-function printUsage(): void {
-  console.log(`
-Donut Investor Pipeline
-
-Usage:
-  bun run src/index.ts <command>
-
-Commands:
-  seed        Load seed investors into database
-  match       Run matching engine and score all investors
-  serve       Start the dashboard web server
-  stats       Show pipeline statistics
-  export      Export investors as JSON to stdout
-
-Scripts:
-  bun run start       Run this CLI
-  bun run dev         Start dashboard with hot reload
-  bun run seed        Seed the database
-  bun run match       Run matching engine
-  `);
-}
-
-async function main(): Promise<void> {
-  switch (command) {
-    case "seed": {
-      await import("./database/seed");
-      break;
+    // Health check
+    if (path === "/health") {
+      const stats = countByStatus();
+      const types = countByType();
+      const aum = totalAum();
+      return Response.json({ status: "ok", investors: Object.values(stats).reduce((a,b)=>a+b,0), aum: `$${aum.toFixed(0)}B`, types, pipeline: stats });
     }
-    case "match": {
-      getDb();
-      const results = runMatchingAndUpdate();
-      console.log(`Scored ${results.length} investors.`);
-      console.log(`\nTop 10:`);
-      for (const r of results.slice(0, 10)) {
-        console.log(`  [${r.score}] ${r.investor.name}`);
-      }
-      closeDb();
-      break;
-    }
-    case "serve": {
-      await import("./web/server");
-      break;
-    }
-    case "stats": {
-      getDb();
-      runMatchingAndUpdate();
-      const investors = listInvestors();
-      const counts = countByStatus();
-      console.log(`\nPipeline Statistics:`);
-      console.log(`  Total investors: ${investors.length}`);
-      console.log(`  Average score: ${investors.length > 0 ? Math.round(investors.reduce((s, i) => s + i.score, 0) / investors.length) : 0}`);
-      console.log(`\n  By status:`);
-      for (const [status, count] of Object.entries(counts)) {
-        console.log(`    ${status}: ${count}`);
-      }
-      closeDb();
-      break;
-    }
-    case "export": {
-      getDb();
-      const { exportInvestorsJson } = await import("./database/investors");
-      console.log(exportInvestorsJson());
-      closeDb();
-      break;
-    }
-    default:
-      printUsage();
-      break;
-  }
-}
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
+    // API: list investors
+    if (path === "/api/investors" && req.method === "GET") {
+      const type = url.searchParams.get("type") || undefined;
+      const status = url.searchParams.get("status") || undefined;
+      const search = url.searchParams.get("search") || undefined;
+      const sort = url.searchParams.get("sort") || "aum";
+      const dir = url.searchParams.get("dir") || "desc";
+      const investors = listInvestors({ type, status, search, sort, dir });
+      return Response.json(investorApiResponse(investors));
+    }
+
+    // API: single investor
+    if (path.startsWith("/api/investors/") && req.method === "GET") {
+      const id = path.replace("/api/investors/", "");
+      const inv = getInvestor(id);
+      if (!inv) return new Response("Not found", { status: 404 });
+      return Response.json(inv);
+    }
+
+    // API: update investor
+    if (path.startsWith("/api/investors/") && req.method === "PATCH") {
+      const id = path.replace("/api/investors/", "");
+      const body = await req.json();
+      updateInvestor(id, body);
+      return Response.json({ ok: true });
+    }
+
+    // Dashboard HTML
+    if (path === "/" || path === "/dashboard") {
+      const type = url.searchParams.get("type") || undefined;
+      const sort = url.searchParams.get("sort") || "aum";
+      const search = url.searchParams.get("search") || undefined;
+      const investors = listInvestors({ type, sort, search });
+      const query: Record<string,string> = {};
+      if (type) query.type = type;
+      if (sort) query.sort = sort;
+      if (search) query.search = search;
+      const html = dashboardPage(investors, query);
+      return new Response(html, { headers: { "Content-Type": "text/html; charset=utf-8" } });
+    }
+
+    return new Response("Not found", { status: 404 });
+  },
 });
+
+console.log(`Investor Pipeline running on http://localhost:${server.port}`);
+console.log(`Dashboard: http://localhost:${server.port}/`);
+console.log(`API: http://localhost:${server.port}/api/investors`);
+console.log(`Health: http://localhost:${server.port}/health`);

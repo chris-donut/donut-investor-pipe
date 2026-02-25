@@ -1,9 +1,10 @@
--- Donut Investor Pipeline Schema
-
 CREATE TABLE IF NOT EXISTS investors (
   id TEXT PRIMARY KEY,
-  name TEXT NOT NULL UNIQUE,
-  type TEXT NOT NULL CHECK(type IN ('vc', 'angel', 'family_office', 'crypto_fund')),
+  name TEXT UNIQUE NOT NULL,
+  type TEXT DEFAULT 'vc',
+  aum REAL DEFAULT 0,
+  aum_rank INTEGER DEFAULT 0,
+  location TEXT DEFAULT '',
   thesis TEXT NOT NULL DEFAULT '[]',
   stage TEXT NOT NULL DEFAULT '[]',
   check_size_min REAL DEFAULT 0,
@@ -11,32 +12,34 @@ CREATE TABLE IF NOT EXISTS investors (
   portfolio TEXT NOT NULL DEFAULT '[]',
   partners TEXT NOT NULL DEFAULT '[]',
   geo TEXT NOT NULL DEFAULT '[]',
-  status TEXT NOT NULL DEFAULT 'researching'
-    CHECK(status IN ('researching', 'to_reach', 'reached_out', 'in_conversation', 'passed', 'committed')),
-  score INTEGER NOT NULL DEFAULT 0,
-  notes TEXT NOT NULL DEFAULT '',
+  status TEXT DEFAULT 'researching',
+  score INTEGER DEFAULT 0,
+  notes TEXT DEFAULT '',
   recent_deals TEXT NOT NULL DEFAULT '[]',
   donut_relevance TEXT NOT NULL DEFAULT '',
-  last_activity TEXT NOT NULL DEFAULT '',
-  source TEXT NOT NULL DEFAULT '',
-  created_at TEXT NOT NULL DEFAULT (datetime('now')),
-  updated_at TEXT NOT NULL DEFAULT (datetime('now'))
+  fund_size TEXT DEFAULT '',
+  recent_coverage TEXT NOT NULL DEFAULT '[]',
+  last_activity TEXT DEFAULT '',
+  source TEXT DEFAULT 'seed-list',
+  created_at TEXT DEFAULT (datetime('now')),
+  updated_at TEXT DEFAULT (datetime('now'))
 );
+CREATE INDEX IF NOT EXISTS idx_investors_aum ON investors(aum DESC);
+CREATE INDEX IF NOT EXISTS idx_investors_aum_rank ON investors(aum_rank ASC);
+CREATE INDEX IF NOT EXISTS idx_investors_status ON investors(status);
+CREATE INDEX IF NOT EXISTS idx_investors_type ON investors(type);
+CREATE INDEX IF NOT EXISTS idx_investors_score ON investors(score DESC);
 
 CREATE TABLE IF NOT EXISTS interactions (
   id TEXT PRIMARY KEY,
-  investor_id TEXT NOT NULL REFERENCES investors(id) ON DELETE CASCADE,
-  type TEXT NOT NULL CHECK(type IN ('cold_email', 'twitter_dm', 'intro_request', 'follow_up', 'meeting', 'note')),
-  channel TEXT NOT NULL DEFAULT '',
-  subject TEXT NOT NULL DEFAULT '',
-  content TEXT NOT NULL DEFAULT '',
-  sent_at TEXT,
-  response TEXT,
-  responded_at TEXT,
-  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+  investor_id TEXT NOT NULL REFERENCES investors(id),
+  type TEXT DEFAULT 'note',
+  channel TEXT DEFAULT '',
+  subject TEXT DEFAULT '',
+  content TEXT DEFAULT '',
+  sent_at TEXT DEFAULT '',
+  response TEXT DEFAULT '',
+  responded_at TEXT DEFAULT '',
+  created_at TEXT DEFAULT (datetime('now'))
 );
-
-CREATE INDEX IF NOT EXISTS idx_investors_status ON investors(status);
-CREATE INDEX IF NOT EXISTS idx_investors_score ON investors(score DESC);
 CREATE INDEX IF NOT EXISTS idx_interactions_investor ON interactions(investor_id);
-CREATE INDEX IF NOT EXISTS idx_interactions_type ON interactions(type);

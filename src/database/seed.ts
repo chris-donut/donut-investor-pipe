@@ -1,43 +1,38 @@
 import { readFileSync } from "fs";
 import { join } from "path";
 import { randomUUID } from "crypto";
-import { getDb, closeDb } from "../storage/db";
 import { createInvestor, type Investor } from "./investors";
 
 const seedPath = join(import.meta.dir, "../../data/seed-investors.json");
+const raw = readFileSync(seedPath, "utf-8");
+const data = JSON.parse(raw);
 
-function seed(): void {
-  const raw = readFileSync(seedPath, "utf-8");
-  const seedData: any[] = JSON.parse(raw);
-
-  getDb();
-
-  let created = 0;
-  for (const entry of seedData) {
-    const investor: Investor = {
-      id: randomUUID(),
-      name: entry.name,
-      type: entry.type,
-      thesis: entry.thesis,
-      stage: entry.stage,
-      check_size: entry.check_size,
-      portfolio: entry.portfolio,
-      partners: entry.partners,
-      geo: entry.geo,
-      status: entry.status || "researching",
-      score: 0,
-      notes: entry.notes || "",
-      recent_deals: entry.recent_deals || [],
-      donut_relevance: entry.donut_relevance || "",
-      last_activity: new Date().toISOString().split("T")[0],
-      source: entry.source || "seed-list",
-    };
-    createInvestor(investor);
-    created++;
-  }
-
-  console.log(`Seeded ${created} investors into database.`);
-  closeDb();
+let created = 0;
+for (const e of data) {
+  const investor: Investor = {
+    id: randomUUID(),
+    name: e.name,
+    type: e.type || "vc",
+    aum: e.aum || 0,
+    aum_rank: e.aum_rank || 0,
+    location: e.location || "",
+    thesis: e.thesis || [],
+    stage: e.stage || [],
+    check_size: e.check_size || { min: 0, max: 0 },
+    portfolio: e.portfolio || [],
+    partners: e.partners || [],
+    geo: e.geo || [],
+    status: e.status || "researching",
+    score: e.score || 0,
+    notes: e.notes || "",
+    recent_deals: e.recent_deals || [],
+    donut_relevance: e.donut_relevance || "",
+    fund_size: e.fund_size || "",
+    recent_coverage: e.recent_coverage || [],
+    last_activity: new Date().toISOString().split("T")[0],
+    source: e.source || "seed-list",
+  };
+  createInvestor(investor);
+  created++;
 }
-
-seed();
+console.log(`Seeded ${created} investors.`);

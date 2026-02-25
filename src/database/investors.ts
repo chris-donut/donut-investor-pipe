@@ -1,11 +1,28 @@
-import { getDb } from "../storage/db";
+import { Database } from "bun:sqlite";
+import { readFileSync } from "fs";
+import { join } from "path";
+import { randomUUID } from "crypto";
+
+const dbPath = join(import.meta.dir, "../../data/investors.db");
+const schemaPath = join(import.meta.dir, "schema.sql");
+
+let db: Database;
+function getDb(): Database {
+  if (!db) {
+    db = new Database(dbPath, { create: true });
+    db.exec("PRAGMA journal_mode = WAL");
+    db.exec("PRAGMA busy_timeout = 5000");
+    const schema = readFileSync(schemaPath, "utf-8");
+    db.exec(schema);
+  }
+  return db;
+}
 
 export interface Partner {
   name: string;
   title: string;
-  twitter?: string;
   linkedin?: string;
-  email?: string;
+  twitter?: string;
   email_pattern?: string;
   focus: string[];
   notes?: string;
@@ -19,195 +36,122 @@ export interface RecentDeal {
   relevance?: string;
 }
 
+export interface CoverageItem {
+  title: string;
+  source: string;
+  date: string;
+  url?: string;
+}
+
 export interface Investor {
   id: string;
   name: string;
-  type: "vc" | "angel" | "family_office" | "crypto_fund";
+  type: string;
+  aum: number;
+  aum_rank: number;
+  location: string;
   thesis: string[];
   stage: string[];
   check_size: { min: number; max: number };
   portfolio: string[];
   partners: Partner[];
   geo: string[];
-  status:
-    | "researching"
-    | "to_reach"
-    | "reached_out"
-    | "in_conversation"
-    | "passed"
-    | "committed";
+  status: string;
   score: number;
   notes: string;
   recent_deals: RecentDeal[];
   donut_relevance: string;
+  fund_size: string;
+  recent_coverage: CoverageItem[];
   last_activity: string;
   source: string;
 }
 
 interface InvestorRow {
-  id: string;
-  name: string;
-  type: string;
-  thesis: string;
-  stage: string;
-  check_size_min: number;
-  check_size_max: number;
-  portfolio: string;
-  partners: string;
-  geo: string;
-  status: string;
-  score: number;
-  notes: string;
-  recent_deals: string;
-  donut_relevance: string;
-  last_activity: string;
-  source: string;
+  id: string; name: string; type: string; aum: number; aum_rank: number;
+  location: string; thesis: string; stage: string; check_size_min: number;
+  check_size_max: number; portfolio: string; partners: string; geo: string;
+  status: string; score: number; notes: string; recent_deals: string;
+  donut_relevance: string; fund_size: string; recent_coverage: string;
+  last_activity: string; source: string; created_at: string; updated_at: string;
 }
 
-function rowToInvestor(row: InvestorRow): Investor {
+function rowToInvestor(r: InvestorRow): Investor {
   return {
-    id: row.id,
-    name: row.name,
-    type: row.type as Investor["type"],
-    thesis: JSON.parse(row.thesis),
-    stage: JSON.parse(row.stage),
-    check_size: { min: row.check_size_min, max: row.check_size_max },
-    portfolio: JSON.parse(row.portfolio),
-    partners: JSON.parse(row.partners),
-    geo: JSON.parse(row.geo),
-    status: row.status as Investor["status"],
-    score: row.score,
-    notes: row.notes,
-    recent_deals: JSON.parse(row.recent_deals || "[]"),
-    donut_relevance: row.donut_relevance || "",
-    last_activity: row.last_activity,
-    source: row.source,
+    id: r.id, name: r.name, type: r.type, aum: r.aum, aum_rank: r.aum_rank,
+    location: r.location, thesis: JSON.parse(r.thesis), stage: JSON.parse(r.stage),
+    check_size: { min: r.check_size_min, max: r.check_size_max },
+    portfolio: JSON.parse(r.portfolio), partners: JSON.parse(r.partners),
+    geo: JSON.parse(r.geo), status: r.status, score: r.score, notes: r.notes,
+    recent_deals: JSON.parse(r.recent_deals), donut_relevance: r.donut_relevance,
+    fund_size: r.fund_size, recent_coverage: JSON.parse(r.recent_coverage),
+    last_activity: r.last_activity, source: r.source,
   };
 }
 
-export function createInvestor(investor: Investor): void {
-  const db = getDb();
-  db.run(
-    `INSERT OR REPLACE INTO investors (id, name, type, thesis, stage, check_size_min, check_size_max, portfolio, partners, geo, status, score, notes, recent_deals, donut_relevance, last_activity, source, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))`,
-    [
-      investor.id,
-      investor.name,
-      investor.type,
-      JSON.stringify(investor.thesis),
-      JSON.stringify(investor.stage),
-      investor.check_size.min,
-      investor.check_size.max,
-      JSON.stringify(investor.portfolio),
-      JSON.stringify(investor.partners),
-      JSON.stringify(investor.geo),
-      investor.status,
-      investor.score,
-      investor.notes,
-      JSON.stringify(investor.recent_deals || []),
-      investor.donut_relevance || "",
-      investor.last_activity,
-      investor.source,
-    ]
+export function createInvestor(i: Investor): void {
+  getDb().run(
+    `INSERT OR REPLACE INTO investors (id,name,type,aum,aum_rank,location,thesis,stage,check_size_min,check_size_max,portfolio,partners,geo,status,score,notes,recent_deals,donut_relevance,fund_size,recent_coverage,last_activity,source)
+     VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+    [i.id, i.name, i.type, i.aum, i.aum_rank, i.location,
+     JSON.stringify(i.thesis), JSON.stringify(i.stage),
+     i.check_size.min, i.check_size.max,
+     JSON.stringify(i.portfolio), JSON.stringify(i.partners), JSON.stringify(i.geo),
+     i.status, i.score, i.notes, JSON.stringify(i.recent_deals),
+     i.donut_relevance, i.fund_size, JSON.stringify(i.recent_coverage),
+     i.last_activity, i.source]
   );
 }
 
 export function getInvestor(id: string): Investor | null {
-  const db = getDb();
-  const row = db
-    .query<InvestorRow, [string]>("SELECT * FROM investors WHERE id = ?")
-    .get(id);
-  return row ? rowToInvestor(row) : null;
+  const r = getDb().query("SELECT * FROM investors WHERE id = ?").get(id) as InvestorRow | null;
+  return r ? rowToInvestor(r) : null;
 }
 
-export function getInvestorByName(name: string): Investor | null {
-  const db = getDb();
-  const row = db
-    .query<InvestorRow, [string]>("SELECT * FROM investors WHERE name = ?")
-    .get(name);
-  return row ? rowToInvestor(row) : null;
-}
-
-export function listInvestors(filters?: {
-  status?: Investor["status"];
-  minScore?: number;
-  thesis?: string;
+export function listInvestors(opts?: {
+  type?: string; status?: string; search?: string;
+  sort?: string; dir?: string; limit?: number;
 }): Investor[] {
-  const db = getDb();
   let sql = "SELECT * FROM investors WHERE 1=1";
-  const params: string[] = [];
-
-  if (filters?.status) {
-    sql += " AND status = ?";
-    params.push(filters.status);
-  }
-  if (filters?.minScore !== undefined) {
-    sql += " AND score >= ?";
-    params.push(String(filters.minScore));
-  }
-  if (filters?.thesis) {
-    sql += " AND thesis LIKE ?";
-    params.push(`%${filters.thesis}%`);
-  }
-
-  sql += " ORDER BY score DESC, name ASC";
-
-  const rows = db.query<InvestorRow, string[]>(sql).all(...params);
-  return rows.map(rowToInvestor);
+  const params: any[] = [];
+  if (opts?.type) { sql += " AND type = ?"; params.push(opts.type); }
+  if (opts?.status) { sql += " AND status = ?"; params.push(opts.status); }
+  if (opts?.search) { sql += " AND (name LIKE ? OR location LIKE ? OR thesis LIKE ?)"; const s = `%${opts.search}%`; params.push(s, s, s); }
+  const sortCol = opts?.sort || "aum"; const dir = opts?.dir === "asc" ? "ASC" : "DESC";
+  const validSorts: Record<string, string> = { aum: "aum", rank: "aum_rank", name: "name", location: "location", status: "status", score: "score" };
+  sql += ` ORDER BY ${validSorts[sortCol] || "aum"} ${sortCol === "rank" || sortCol === "name" ? "ASC" : dir}`;
+  if (opts?.limit) { sql += " LIMIT ?"; params.push(opts.limit); }
+  return (getDb().query(sql).all(...params) as InvestorRow[]).map(rowToInvestor);
 }
 
-export function updateInvestor(
-  id: string,
-  updates: Partial<Omit<Investor, "id">>
-): void {
-  const db = getDb();
-  const setClauses: string[] = [];
-  const params: (string | number)[] = [];
-
-  if (updates.name !== undefined) { setClauses.push("name = ?"); params.push(updates.name); }
-  if (updates.type !== undefined) { setClauses.push("type = ?"); params.push(updates.type); }
-  if (updates.thesis !== undefined) { setClauses.push("thesis = ?"); params.push(JSON.stringify(updates.thesis)); }
-  if (updates.stage !== undefined) { setClauses.push("stage = ?"); params.push(JSON.stringify(updates.stage)); }
-  if (updates.check_size !== undefined) { setClauses.push("check_size_min = ?"); params.push(updates.check_size.min); setClauses.push("check_size_max = ?"); params.push(updates.check_size.max); }
-  if (updates.portfolio !== undefined) { setClauses.push("portfolio = ?"); params.push(JSON.stringify(updates.portfolio)); }
-  if (updates.partners !== undefined) { setClauses.push("partners = ?"); params.push(JSON.stringify(updates.partners)); }
-  if (updates.geo !== undefined) { setClauses.push("geo = ?"); params.push(JSON.stringify(updates.geo)); }
-  if (updates.status !== undefined) { setClauses.push("status = ?"); params.push(updates.status); }
-  if (updates.score !== undefined) { setClauses.push("score = ?"); params.push(updates.score); }
-  if (updates.notes !== undefined) { setClauses.push("notes = ?"); params.push(updates.notes); }
-  if (updates.recent_deals !== undefined) { setClauses.push("recent_deals = ?"); params.push(JSON.stringify(updates.recent_deals)); }
-  if (updates.donut_relevance !== undefined) { setClauses.push("donut_relevance = ?"); params.push(updates.donut_relevance); }
-  if (updates.last_activity !== undefined) { setClauses.push("last_activity = ?"); params.push(updates.last_activity); }
-  if (updates.source !== undefined) { setClauses.push("source = ?"); params.push(updates.source); }
-
-  if (setClauses.length === 0) return;
-
-  setClauses.push("updated_at = datetime('now')");
+export function updateInvestor(id: string, updates: Partial<Investor>): void {
+  const sets: string[] = []; const params: any[] = [];
+  if (updates.status !== undefined) { sets.push("status = ?"); params.push(updates.status); }
+  if (updates.score !== undefined) { sets.push("score = ?"); params.push(updates.score); }
+  if (updates.notes !== undefined) { sets.push("notes = ?"); params.push(updates.notes); }
+  if (updates.aum !== undefined) { sets.push("aum = ?"); params.push(updates.aum); }
+  if (updates.location !== undefined) { sets.push("location = ?"); params.push(updates.location); }
+  if (sets.length === 0) return;
+  sets.push("updated_at = datetime('now')");
   params.push(id);
-
-  db.run(`UPDATE investors SET ${setClauses.join(", ")} WHERE id = ?`, params);
-}
-
-export function deleteInvestor(id: string): void {
-  const db = getDb();
-  db.run("DELETE FROM investors WHERE id = ?", [id]);
+  getDb().run(`UPDATE investors SET ${sets.join(",")} WHERE id = ?`, params);
 }
 
 export function countByStatus(): Record<string, number> {
-  const db = getDb();
-  const rows = db
-    .query<{ status: string; count: number }, []>(
-      "SELECT status, COUNT(*) as count FROM investors GROUP BY status"
-    )
-    .all();
-  const result: Record<string, number> = {};
-  for (const row of rows) {
-    result[row.status] = row.count;
-  }
-  return result;
+  const rows = getDb().query("SELECT status, COUNT(*) as c FROM investors GROUP BY status").all() as any[];
+  const m: Record<string, number> = {};
+  rows.forEach(r => m[r.status] = r.c);
+  return m;
 }
 
-export function exportInvestorsJson(): string {
-  const investors = listInvestors();
-  return JSON.stringify(investors, null, 2);
+export function countByType(): Record<string, number> {
+  const rows = getDb().query("SELECT type, COUNT(*) as c FROM investors GROUP BY type").all() as any[];
+  const m: Record<string, number> = {};
+  rows.forEach(r => m[r.type] = r.c);
+  return m;
+}
+
+export function totalAum(): number {
+  const r = getDb().query("SELECT SUM(aum) as total FROM investors").get() as any;
+  return r?.total || 0;
 }
